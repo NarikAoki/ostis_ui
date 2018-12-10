@@ -90,7 +90,7 @@ scp_program -> agent_of_searching_the_frequency_of_use_of_each_key_element
 				*);;
 
 			=> nrel_then: .agent_of_searching_the_frequency_of_use_of_each_key_element_gen;;
-			=> nrel_else: .agent_of_searching_the_frequency_of_use_of_each_key_element_return;;
+			=> nrel_else: .agent_of_searching_the_frequency_of_use_of_each_key_element_add_validating_message1;;
 			*);;
 
 		-> .agent_of_searching_the_frequency_of_use_of_each_key_element_gen
@@ -148,6 +148,21 @@ scp_program -> agent_of_searching_the_frequency_of_use_of_each_key_element
 			-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
 
 			=> nrel_goto: .agent_of_searching_the_frequency_of_use_of_each_key_element_return;; 
+			*);;
+
+		-> .agent_of_searching_the_frequency_of_use_of_each_key_element_add_validating_message1
+			(*
+		  	<- call;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_adding_validating_message;;
+		  	-> rrel_2: rrel_fixed: rrel_scp_const: .agent_of_searching_the_frequency_of_use_of_each_key_element_add_validating_message_params1
+				(*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+				-> rrel_2: rrel_fixed: rrel_scp_const: [No key elements for the user.];;
+				*);;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _descr3;;
+
+		  	=> nrel_goto: .agent_of_searching_the_frequency_of_use_of_each_key_element_add_validating_message_wr;;
 			*);;
 
 		-> .agent_of_searching_the_frequency_of_use_of_each_key_element_add_validating_message

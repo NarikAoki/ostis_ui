@@ -88,7 +88,7 @@ scp_program -> agent_of_searching_the_most_relevant_key_element
 				*);;
 
 			=> nrel_then: .agent_of_searching_the_most_relevant_key_element_gen1;;
-			=> nrel_else: .agent_of_searching_the_most_relevant_key_element_return;;
+			=> nrel_else: .agent_of_searching_the_most_relevant_key_element_add_validating_message1;;
 			*);;
 
 		-> .agent_of_searching_the_most_relevant_key_element_gen1
@@ -263,6 +263,21 @@ scp_program -> agent_of_searching_the_most_relevant_key_element
 			=> nrel_goto: .agent_of_searching_the_most_relevant_key_element_return;; 
 			*);;
 
+		-> .agent_of_searching_the_most_relevant_key_element_add_validating_message1
+			(*
+		  	<- call;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_adding_validating_message;;
+		  	-> rrel_2: rrel_fixed: rrel_scp_const: .agent_of_searching_the_most_relevant_key_element_operator_call_params1 
+				(*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+				-> rrel_2: rrel_fixed: rrel_scp_const: [No key elements for the user.];;
+				*);;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _descr3;;
+
+		  	=> nrel_goto: .agent_of_searching_the_most_relevant_key_element_add_validating_message_wr;;
+			*);;
+
 		-> .agent_of_searching_the_most_relevant_key_element_add_validating_message
 			(*
 		  	<- call;;
@@ -284,7 +299,18 @@ scp_program -> agent_of_searching_the_most_relevant_key_element
 
 		  	-> rrel_1: rrel_fixed: rrel_scp_var: _descr3;;
 
-		  	=> nrel_goto: .agent_of_searching_the_most_relevant_key_element_return;;
+		  	=> nrel_goto: .agent_of_searching_the_most_relevant_key_element_end7;;
+			*);;
+
+		-> .agent_of_searching_the_most_relevant_key_element_end7
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: question_finished_unsuccessfully;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+			=> nrel_goto: .agent_of_searching_the_most_relevant_key_element_return;; 
 			*);;
 
 		-> .agent_of_searching_the_most_relevant_key_element_return
