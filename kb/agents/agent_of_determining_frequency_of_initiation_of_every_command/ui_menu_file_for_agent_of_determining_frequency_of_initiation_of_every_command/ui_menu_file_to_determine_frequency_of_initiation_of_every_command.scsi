@@ -1,9 +1,9 @@
 ui_menu_file_to_determine_frequency_of_initiation_of_every_command <- ui_user_command_class_atom; ui_user_command_class_view_kb; ui_one_argument_command_class;;
 
 ui_menu_file_to_determine_frequency_of_initiation_of_every_command => nrel_main_idtf: 
-	[Посчитать запросы] 
+	[Посчитать частоту инициирования каждой команды пользователем] 
 	(* <- lang_ru;; *);
-	[Check the questions] 
+	[Count frequency of initiating every command by user] 
 	(* <- lang_en;; *);;
 
 ui_menu_file_to_determine_frequency_of_initiation_of_every_command => ui_nrel_command_template:

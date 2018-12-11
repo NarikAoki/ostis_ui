@@ -1,9 +1,9 @@
 ui_menu_file_to_printing_relevant_command <- ui_user_command_class_atom; ui_user_command_class_view_kb; ui_one_argument_command_class;;
 
 ui_menu_file_to_printing_relevant_command => nrel_main_idtf: 
-	[Вывести релевантную команду] 
+	[Вывести наиболее релевантную команду для пользователя] 
 	(* <- lang_ru;; *);
-	[Print relevant command] 
+	[Print the most relevant command for an user] 
 	(* <- lang_en;; *);;
 
 ui_menu_file_to_printing_relevant_command => ui_nrel_command_template:
