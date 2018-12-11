@@ -1,0 +1,16 @@
+sc_node_not_relation -> concept_global_binarization;;
+concept_global_binarization => nrel_main_idtf: [глобальная бинаризация] (* <- lang_ru;; *);;
+concept_global_binarization <- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(глобальная бинаризация)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+        -> rrel_example: [глобальная бинаризация — бинаризация, в которой пороговое значение бинаризации, остается неизменной в течение всего процесса бинаризации.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+    (*
+        -> concept_binarization;;
+        -> concept_binarization_threshold;;
+    *);;
+*);;

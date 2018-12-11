@@ -1,0 +1,15 @@
+sc_node_not_relation -> concept_per_pixel_analysis;;
+concept_per_pixel_analysis => nrel_main_idtf: [попиксельный анализ] (* <- lang_ru;; *);;
+concept_per_pixel_analysis <- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(попиксельный анализ)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+        -> rrel_example: [попиксельный анализ — оценка каждого пикселя какому либо заданному критерию.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+    (*
+        -> concept_pixel;;
+    *);;
+*);;

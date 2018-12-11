@@ -1,0 +1,17 @@
+concept_task_of_finding_images_by_content => nrel_idtf:[task of finding images by content] (* <-lang_en;; *);;
+definition->...
+(*
+	<= nrel_using_constants:...
+		(*
+			->image;;
+		*);;
+	
+	=> nrel_main_idtf: [Опр.(задача поиска изображений по содержанию)] (* <-lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Задача поиска изображений по содержанию - задача нахождения всех изображений в большом наборе изображений, которые имеют определённое содержание.
+]	(* <-lang_ru;; *);;
+	*);;
+	
+		-> rrel_key_sc_element:concept_task_of_finding_images_by_content;;
+*);;

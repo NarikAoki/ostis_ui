@@ -1,0 +1,17 @@
+concept_identification => nrel_idtf:[identification] (* <-lang_en;; *);;
+definition->...
+(*
+	/*<= nrel_using_constants:...
+		(*
+			->
+		*);;
+	*/
+	=> nrel_main_idtf: [Опр.(идентификация)] (* <-lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Идентификация - процесс распознавания индивидуального экземпляра объекта.]
+(* <-lang_ru;; *);;
+	*);;
+	
+		-> rrel_key_sc_element:concept_identification;;
+*);;

@@ -1,0 +1,34 @@
+concept_computer_vision => nrel_idtf:[computer vision] (* <-lang_en;; *);;
+concept_computer_vision <- rrel_maximum_studied_object_class:sb_d_computer_vision;;
+concept_computer_vision => nrel_inclusion:concept_image_processing;concept_machine_vision;;
+concept_computer_vision => nrel_used_task:concept_recognition_task;;
+
+definition->...
+(*
+	<= nrel_using_constants:...
+		(*
+			->concept_detection;;
+			->concept_tracking;;
+			->concept_object_classification;;
+		*);;
+	=> nrel_main_idtf: [Опр.(компьютерное зрение)] (* <-lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Компьютерное зрение - теория и технология создания машин, которые могут производить обнаружение, отслеживание, классификацию объектов и использования полученных данных для решения разного рода прикладных задач без участия (полного или частичного) человека.]
+		(* <-lang_ru;; *);;
+	*);;
+	
+		-> rrel_key_sc_element:concept_computer_vision;;
+*);;
+statement->...
+	(*
+		=>nrel_idtf:[Утв.(компьютерное зрение, анализ изображений, датчик изображения)] (* <-lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+		(*
+			->[Цель компьютерного зрения заключается в формировании полезных выводов относительно объектов и сцен реального мира на основе анализа изображений, полученных с помощью датчиков изображения.]
+			(* <-lang_ru;; *);;
+		*);;
+		
+		->rrel_key_sc_element:concept_computer_vision;concept_image_analysis;concept_image_sensor;;
+	*);;
+

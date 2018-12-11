@@ -1,0 +1,18 @@
+sc_node_not_relation -> concept_movement_task;;
+concept_movement_task => nrel_main_idtf: [задача движения] (* <- lang_ru;; *);;
+concept_movement_task <- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(задача движения)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+        -> rrel_example: [задача движения — задача компьютерного зрения, в которой последовательность изображений обрабатываются для нахождения оценки скорости каждого пикселя или 3D сцены.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+    (*
+        -> concept_computer_vision;;
+        -> concept_image_sequence;;
+        -> concept_pixel;;
+        -> concept_3d_scene;;
+    *);;
+*);;

@@ -1,0 +1,29 @@
+concept_image_resolution => nrel_idtf:[image resolution] (* <-lang_en;; *);;
+definition->...
+(*
+	<= nrel_using_constants:...
+		(*
+			->concept_point;;
+		*);;
+	
+	=> nrel_main_idtf: [Опр.(разрешение изображения)] (* <-lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Разрешение изображения - величина, определяющая количество точек (элементов растрового изображения) на единицу площади.]
+		(* <-lang_ru;; *);;
+	*);;
+	
+		-> rrel_key_sc_element:concept_image_resolution;;
+*);;
+statement->...
+	(*
+		=>nrel_idtf:[Утв.(разрешение изображения)] (* <-lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+		(*
+			->[Более высокое разрешение изображения обеспечивает более точные представления оригинала.]
+			(* <-lang_ru;; *);;
+		*);;
+		
+		->rrel_key_sc_element:concept_image_resolution;;
+	*);;
+

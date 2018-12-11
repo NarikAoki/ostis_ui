@@ -1,0 +1,17 @@
+sc_node_not_relation -> concept_local_binarization;;
+concept_local_binarization => nrel_main_idtf: [локальная бинаризация] (* <- lang_ru;; *);;
+concept_local_binarization <- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(локальная бинаризация)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+        -> rrel_example: [локальная бинаризация — бинаризация, в которой, изображение разбивается на области, в каждой из которых вычисляется локальное пороговое значение бинаризации.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+    (*
+        -> concept_binarization;;
+        -> concept_binarization_threshold;;
+        -> image;;
+    *);;
+*);;

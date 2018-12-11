@@ -1,0 +1,28 @@
+concept_optical_character_recognition => nrel_idtf:[optical character recognition] (* <-lang_en;; *);;
+definition->...
+(*
+	/*<= nrel_using_constants:...
+		(*
+			->
+		*);;
+	*/
+	=> nrel_main_idtf: [Опр.(оптическое распознавание символов)] (* <-lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Оптическое распознавание символов - автоматизированное чтение текста.]
+		(* <-lang_ru;; *);;
+	*);;
+	
+		-> rrel_key_sc_element:concept_optical_character_recognition;;
+*);;
+statement->...
+	(*
+		=>nrel_idtf:[Утв.(оптическое распознавание символов)] (* <-lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+		(*
+			->[Оптическое распознавание символов позволяет редактировать текст, осуществлять поиск слов или фраз, хранить его в более компактной форме, демонстрировать или распечатывать материал, не теряя качества, анализировать информацию, а также применять к тексту электронный перевод, форматирование или преобразование в речь.
+](* <-lang_ru;; *);;
+		*);;
+		
+		->rrel_key_sc_element:concept_optical_character_recognition;;
+	*);;

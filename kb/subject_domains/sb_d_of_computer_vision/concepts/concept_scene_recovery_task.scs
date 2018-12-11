@@ -1,0 +1,17 @@
+sc_node_not_relation -> concept_scene_recovery_task;;
+concept_scene_recovery_task => nrel_main_idtf: [задача восстановления сцены] (* <- lang_ru;; *);;
+concept_scene_recovery_task <- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(задача восстановления сцены)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+        -> rrel_example: [задача восстановления сцены — задача компьютерного зрения, воссоздать трехмерную модель сцены по некоторым изображениям сцены.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+    (*
+        -> concept_computer_vision;;
+        -> concept_3d_model;;
+        -> image;;
+    *);;
+*);;

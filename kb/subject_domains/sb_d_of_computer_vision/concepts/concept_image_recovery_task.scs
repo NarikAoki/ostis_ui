@@ -1,0 +1,16 @@
+sc_node_not_relation -> concept_image_recovery_task;;
+concept_image_recovery_task => nrel_main_idtf: [задача восстановления изображений] (* <- lang_ru;; *);;
+concept_image_recovery_task <- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(задача восстановления сцены)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+        -> rrel_example: [задача восстановления изображений — задача компьютерного зрения, состоящая в удалении шума изображения.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+    (*
+        -> concept_computer_vision;;
+        -> concept_image_noise;;
+    *);;
+*);;

@@ -1,0 +1,16 @@
+sc_node_not_relation -> concept_object_classification;;
+concept_object_classification => nrel_main_idtf: [классификация объектов] (* <- lang_ru;; *);;
+concept_object_classification <- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(классификация объектов)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+        -> rrel_example: [классификация объектов — процесс определения класса к которому относится объект.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+    (*
+        -> process;;
+        -> class;;
+    *);;
+*);;

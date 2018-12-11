@@ -1,0 +1,17 @@
+sc_node_not_relation -> concept_scaling_method;;
+concept_scaling_method => nrel_main_idtf: [метод масштабирования] (* <- lang_ru;; *);;
+concept_scaling_method <- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(метод масштабирования)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+        -> rrel_example: [метод масштабирования  — метод системы предварительной обработки, используемый для лучшего различия структур на изображении.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+    (*
+        -> concept_preprocessing_system;;
+        -> structure;;
+        -> image;;
+    *);;
+*);;

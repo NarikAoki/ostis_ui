@@ -1,0 +1,11 @@
+sc_node_not_relation -> concept_image_sensor;;
+concept_image_sensor => nrel_main_idtf: [датчик изображения] (* <- lang_ru;; *);;
+concept_image_sensor <- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(датчик изображения)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+        -> rrel_example: [датчик изображения  — полупроводниковое устройство, преобразующее фотоны в электрическое напряжение, а затем в цифровые данные.] (* <- lang_ru;; *);;
+	*);;
+*);;

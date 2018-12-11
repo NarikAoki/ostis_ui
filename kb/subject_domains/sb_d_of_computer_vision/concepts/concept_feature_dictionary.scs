@@ -1,0 +1,17 @@
+concept_feature_dictionary => nrel_idtf:[feature dictionary] (* <-lang_en;; *);;
+definition->...
+(*
+	<= nrel_using_constants:...
+		(*
+			->concept_recognition_task;;
+		*);;
+	
+	=> nrel_main_idtf: [Опр.(словарь признаков)] (* <-lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Словарь признаков - определение минимального набора признаков, достаточного для решения задач распознавания.]
+		(* <-lang_ru;; *);;
+	*);;
+	
+		-> rrel_key_sc_element:concept_feature_dictionary;;
+*);;

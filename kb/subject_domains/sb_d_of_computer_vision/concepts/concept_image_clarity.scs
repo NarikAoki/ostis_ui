@@ -1,0 +1,28 @@
+concept_image_clarity => nrel_idtf:[image clarity] (* <-lang_en;; *);;
+definition->...
+(*
+	/*<= nrel_using_constants:...
+		(*
+			->nrel_bound;;
+		*);;
+	*/
+	=> nrel_main_idtf: [Опр.(чёткость изображения)] (* <-lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Чёткость изображения - описывает степень размытия границ.]
+		(* <-lang_ru;; *);;
+	*);;
+	
+		-> rrel_key_sc_element:concept_image_clarity;;
+*);;
+statement->...
+	(*
+		=>nrel_idtf:[Утв.(чёткость изображения, граница)] (* <-lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+		(*
+			->[Высокая чёткость  изображения подразумевает резкие, чётко видимые границы.]
+			(* <-lang_ru;; *);;
+		*);;
+		
+		->rrel_key_sc_element:concept_image_clarity;nrel_bound;;
+	*);;

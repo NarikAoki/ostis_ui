@@ -1,0 +1,15 @@
+sc_node_not_relation -> concept_optical_flow_analysis;;
+concept_optical_flow_analysis => nrel_main_idtf: [анализ оптического потока] (* <- lang_ru;; *);;
+concept_optical_flow_analysis <- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(анализ оптического потока)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+        -> rrel_example: [анализ оптического потока — анализ изображения видимого движения объектов, поверхностей или краев сцены, получаемое в результате перемещения наблюдателя (глаз или камеры) относительно сцены.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+    (*
+        -> image;;
+    *);;
+*);;
