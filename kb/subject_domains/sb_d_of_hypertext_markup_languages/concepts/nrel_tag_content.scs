@@ -1,0 +1,45 @@
+sc_node_norole_relation -> nrel_tag_content;;
+
+nrel_tag_content => nrel_idtf: [tag content* ](* <- lang_en;; *);;
+nrel_tag_content => nrel_main_idtf: [содержимое тега* ](* <- lang_ru;; *);;
+
+nrel_tag_content => nrel_first_domain: concept_tag;;
+nrel_tag_content => nrel_second_domain: concept_sc_text; concept_tag; set;;
+nrel_tag_content => nrel_definitional_domain:...
+	(*
+		<= nrel_combination:...
+		(*
+			-> concept_sc_text; concept_tag; set;;
+		*);;
+	*);;
+
+nrel_tag_content <- norole_relation; binary_relation; oriented_relation;; 
+
+definition -> ...
+	(*
+		=> nrel_main_idtf: [Опр.(содержимое тега*)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: [содержимое тега* - бинарное ориентированное отношение, первым компонентом связок которого является некоторый тег, 
+                              а вторым компонентом может быть sc-текст, тег, множество элементов.](* <- lang_ru;; *);;
+		*);;
+		-> rrel_key_sc_element: nrel_tag_content;;
+		<= nrel_using_constants :...
+		(*
+			-> binary_relation; concept_sc_text; concept_tag; set;;
+		*);;
+	*);;
+
+statement -> ...
+	(*
+		=> nrel_main_idtf: [Утв.(содержимое тега*, множество)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: [содержимым тега может быть пустое множество элементов](* <- lang_ru;; *);;
+		*);;
+		-> rrel_key_sc_element: nrel_tag_content; set;;
+	*);;
+
+	concept_tag_head -> head;;
+    concept_tag_meta -> meta;;
+	head => nrel_tag_content: meta;;

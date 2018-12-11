@@ -1,0 +1,31 @@
+sc_node_not_relation -> concept_tag_style;;
+
+concept_tag_style => nrel_idtf: [<style></style>](* <- lang_en;; *);;
+concept_tag_style => nrel_main_idtf: [тег style](* <- lang_ru;; *);;
+concept_tag_style => nrel_main_idtf: [tag style](* <- lang_en;; *);;
+
+definition -> ...
+	(*
+		=> nrel_main_idtf: [Опр.(тег style)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: [Тег <style></style> - подключает встраиваемые таблицы стилей.](* <- lang_ru;; *);;
+		*);;
+		-> rrel_key_sc_element: concept_tag_style;;
+		<= nrel_using_constants :...
+		(*
+			-> concept_global_style;;
+		*);;
+	*);;
+
+statement -> ...
+	(*
+		=> nrel_main_idtf: [Утв.(тег style, тег head, содержимое тега*)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: [Тег <style></style> является содержимым <head></head>.](* <- lang_ru;; *);;
+		*);;
+		-> rrel_key_sc_element: concept_tag_style; concept_tag_head; nrel_tag_content;;
+	*);; 
+
+concept_global_style => nrel_main_idtf: [глобальный стиль] (* <- lang_ru;; *);;

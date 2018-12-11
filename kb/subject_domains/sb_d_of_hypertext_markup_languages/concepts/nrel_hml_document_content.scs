@@ -1,0 +1,45 @@
+sc_node_norole_relation -> nrel_html_document_content;;
+
+nrel_html_document_content => nrel_idtf: [html-document content* ](* <- lang_en;; *);;
+nrel_html_document_content => nrel_main_idtf: [содержимое html-документа* ](* <- lang_ru;; *);;
+
+
+ nrel_html_document_content => nrel_first_domain: concept_html_document;;
+nrel_html_document_content => nrel_second_domain: concept_sc_text; concept_tag; set;;
+nrel_html_document_content => nrel_definitional_domain:...
+	(*
+		<= nrel_combination:...
+		(*
+			->concept_sc_text; concept_tag; set; concept_html_document;;
+		*);;
+	*);;
+
+nrel_html_document_content <- norole_relation; binary_relation; oriented_relation;; 
+
+definition -> ...
+	(*
+		=> nrel_main_idtf: [Опр.(содержимое html-документа*)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: [Cодержимое html-документа* - бинарное ориентированное отношение, первым компонентом связок которого является некоторый html-документ, а вторым компонентом может быть sc-текст, тег, множество элементов.](* <- lang_ru;; *);;
+		*);;
+		-> rrel_key_sc_element: nrel_html_document_content;;
+		<= nrel_using_constants :...
+		(*
+			-> binary_relation; concept_sc_text; concept_tag; set; concept_html_document;;
+		*);;
+	*);;
+
+statement -> ...
+	(*
+		=> nrel_main_idtf: [Утв.(содержимое html-документа*, главный элемент)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: [Главные элементы являются обязательным содержимым html-документва](* <- lang_ru;; *);;
+		*);;
+		-> rrel_key_sc_element: nrel_html_document_content; concept_main_element;;
+	*);;
+
+	concept_tag_head -> torrent_html;;
+    concept_tag_meta -> html;;
+	torrent_html => nrel_html_document_content: html;;

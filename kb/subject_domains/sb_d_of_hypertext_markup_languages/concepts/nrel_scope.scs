@@ -1,0 +1,50 @@
+sc_node_norole_relation -> nrel_scope;;
+
+nrel_scope => nrel_main_idtf: [область действия*] (* <- lang_ru;; *);;
+nrel_scope => nrel_main_idtf: [scope*] (* <- lang_en;; *);;
+
+nrel_scope <- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(область действия*)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: [Область действия* - бинарное ориентированное отношение, первым компонентом связок которого является селектор, а вторым компонентом может быть тег, класс, идентификатор, обозначающие к чему будет применен стиль.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> concept_selector;;
+		-> concept_tag;;
+		-> nrel_class;;
+		-> nrel_tag_id;;
+	*);;
+*);;
+
+nrel_scope => nrel_first_domain: concept_selector;;
+nrel_scope => nrel_second_domain:...
+(*
+	<= nrel_combination:
+	{
+		concept_tag;
+		nrel_class;
+		nrel_tag_id
+	};;
+*);;
+concept_selector <-...
+(*
+	-> concept_tag;;
+	=> nrel_combination:...
+	(*
+		<=nrel_definitional_domain: nrel_scope;;
+	*);;
+*);;
+
+nrel_scope <- binary_relation;;
+parameter -> arity;;
+arity -> binary_relation;;
+binary_relation => nrel_measurement: 2;;
+2 <- number;;
+nrel_scope <- oriented_relation;;
+antisymmetric_relation -> nrel_scope;;
+antitransitive_relation -> nrel_scope;;
+antireflexive_relation -> nrel_scope;;

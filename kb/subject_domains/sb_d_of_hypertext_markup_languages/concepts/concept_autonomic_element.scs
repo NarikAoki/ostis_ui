@@ -1,0 +1,41 @@
+sc_node_not_relation -> concept_autonomic_element;;
+
+concept_autonomic_element => nrel_main_idtf: [автономный элемент] (* <- lang_ru;; *);;
+concept_autonomic_element => nrel_main_idtf: [autonomic element] (* <- lang_en;; *);;
+
+concept_autonomic_element <- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(автономный элемент)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: [Автомномный элемент-это тег, который является непосредственной частью строки.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> concept_html_document;;
+		-> concept_tag;;
+	*);;
+*);;
+
+concept_autonomic_element <- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(автономный элемент)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: [Автономные элементы используются для изменения вида текста или его логического выделения.] (* <- lang_ru;; *);;
+	*);;
+*);;
+
+concept_autonomic_element => nrel_inclusion: concept_tag_br;;
+concept_autonomic_element => nrel_inclusion: concept_tag_hr;;
+concept_autonomic_element => nrel_inclusion: concept_tag_img;;
+concept_autonomic_element => nrel_inclusion: concept_tag_audio;;
+concept_autonomic_element => nrel_inclusion: concept_tag_video;;
+concept_autonomic_element => nrel_inclusion: concept_tag_object;;
+concept_autonomic_element => nrel_inclusion: concept_tag_meta;;
+concept_autonomic_element => nrel_inclusion: concept_tag_link;;
+concept_autonomic_element => nrel_inclusion: concept_tag_input;;
+concept_autonomic_element => nrel_inclusion: concept_tag_keygen;;
+concept_autonomic_element => nrel_inclusion: concept_tag_textarea;;

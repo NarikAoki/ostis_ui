@@ -1,0 +1,43 @@
+sc_node_not_relation -> concept_tag_s;;
+
+concept_tag_s => nrel_idtf: [<s></s>](* <- lang_en;; *);;
+concept_tag_s => nrel_main_idtf: [тег s](* <- lang_ru;; *);;
+concept_tag_s => nrel_main_idtf: [tag s](* <- lang_en;; *);;
+
+definition -> ...
+	(*
+		=> nrel_main_idtf: [Опр.(тег s)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: [Тег <s></s> - перечёркивает неактуальный текст.](* <- lang_ru;; *);;
+		*);;
+		-> rrel_key_sc_element: concept_tag_s;;
+		<= nrel_using_constants :...
+		(*
+			-> concept_tag;;
+			-> concept_sc_text;;
+		*);;
+	*);;
+
+statement -> ...
+	(*
+		=> nrel_main_idtf: [Утв.(тег s, стиль)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: [Взамен тега <s></s> рекомендуется использовать стили.](* <- lang_ru;; *);;
+		*);;
+		-> rrel_key_sc_element: concept_tag_s; concept_style;;
+	*);; 
+
+concept_style => nrel_main_idtf: [стиль] (* <- lang_ru;; *);;
+
+concept_tag_s <- rrel_key_sc_element:...
+(*
+<-illustration;;<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://images/s.png"
+(*
+=>nrel_format:format_png;;
+*);;
+*);;
+*);;

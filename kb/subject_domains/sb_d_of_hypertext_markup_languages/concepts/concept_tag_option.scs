@@ -1,0 +1,36 @@
+sc_node_not_relation -> concept_tag_option;;
+
+concept_tag_option => nrel_main_idtf: [тег option] (* <-lang_ru;; *);;
+concept_tag_option => nrel_main_idtf: [tag option] (* <-lang_en;; *);;
+concept_tag_option => nrel_idtf: [<option></option>] (* <-lang_en;; *);;
+
+concept_tag_option <- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(тег option)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: [Тег <option></option>-это тег, который определяет отдельные пункты списка, создаваемого с помощью контейнера <select>.](* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> concept_list;;
+		-> concept_tag_select;;
+		-> concept_tag;;
+	*);;
+*);;
+
+concept_tag_option <- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://images/Tag_option.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;
+
+sc_node_not_relation -> concept_tag_select;;
+concept_tag_select => nrel_main_idtf: [тег select] (* <-lang_ru;; *);;

@@ -1,0 +1,31 @@
+sc_node_not_relation -> concept_tag_object;;
+
+concept_tag_object => nrel_idtf: [<object></object>];;
+concept_tag_object => nrel_main_idtf: [тег object](* <- lang_ru;; *);;
+concept_tag_object => nrel_main_idtf: [tag object](* <- lang_en;; *);;
+
+definition -> ...
+	(*
+		=> nrel_main_idtf: [Опр.(тег object)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: [Тег <object/> - контейнер для встраивания мультимедиа.](* <- lang_ru;; *);;
+		*);;
+		-> rrel_key_sc_element: concept_tag_object;;
+		<= nrel_using_constants :...
+		(*
+			-> concept_container; concept_multimedia;;
+		*);;
+	*);;
+
+statement -> ...
+	(*
+		=> nrel_main_idtf: [Утв.(тег object, контейнер)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: [Тег <object/> является контейнером.](* <- lang_ru;; *);;
+		*);;
+		-> rrel_key_sc_element: concept_tag_object; concept_container;;
+	*);; 
+
+concept_multimedia => nrel_main_idtf: [мультимедиа] (* <- lang_ru;; *);;

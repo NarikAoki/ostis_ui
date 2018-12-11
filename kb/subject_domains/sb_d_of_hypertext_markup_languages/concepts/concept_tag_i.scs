@@ -1,0 +1,43 @@
+sc_node_not_relation -> concept_tag_i;;
+
+concept_tag_i => nrel_idtf: [<i></i>](* <- lang_en;; *);;
+concept_tag_i => nrel_main_idtf: [тег i](* <- lang_ru;; *);;
+concept_tag_i => nrel_main_idtf: [tag i](* <- lang_en;; *);;
+
+definition -> ...
+	(*
+		=> nrel_main_idtf: [Опр.(тег i)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: [Тег <i></i> - выделяет текст курсивом без акцента.](* <- lang_ru;; *);;
+		*);;
+		-> rrel_key_sc_element: concept_tag_i;;
+		<= nrel_using_constants :...
+		(*
+			-> concept_tag;;
+			-> concept_sc_text;;
+		*);;
+	*);;
+
+concept_tag_i -> rrel_example: i;;
+
+statement -> ...
+	(*
+		=> nrel_main_idtf: [Утв.(тег i, тег, текст)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: [Допустимо использовать этот тег <i></i> совместно с другими тегами, которые определяют начертание текста.](* <- lang_ru;; *);;
+		*);;
+		-> rrel_key_sc_element: concept_tag_i; concept_tag; concept_sc_text;;
+	*);; 
+
+concept_tag_i <- rrel_key_sc_element:...
+(*
+<-illustration;;<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://images/tag_i.png"
+(*
+=>nrel_format:format_png;;
+*);;
+*);;
+*);;

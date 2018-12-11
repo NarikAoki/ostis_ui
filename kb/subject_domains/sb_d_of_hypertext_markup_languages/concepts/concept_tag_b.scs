@@ -1,0 +1,29 @@
+sc_node_not_relation -> concept_tag_b;;
+
+concept_tag_b => nrel_idtf: [<b></b>](* <- lang_en;; *);;
+concept_tag_b => nrel_main_idtf: [tag b](* <- lang_en;; *);;
+concept_tag_b => nrel_main_idtf: [тег b](* <- lang_ru;; *);;
+
+definition -> ...
+	(*
+		=> nrel_main_idtf: [Опр.(тег b)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: [Тег <b></b> - задает полужирное начертание отрывка текста, без дополнительного акцента.](* <- lang_ru;; *);;
+		*);;
+		-> rrel_key_sc_element: concept_tag_b;;
+		<= nrel_using_constants :...
+		(*
+			-> concept_sc_text;;
+		*);;
+	*);;
+
+statement -> ...
+	(*
+		=> nrel_main_idtf: [Утв.(тег b, тег, текст)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: [Допустимо использовать этот тег <b></b> совместно с другими тегами, которые определяют начертание текста.](* <- lang_ru;; *);;
+		*);;
+		-> rrel_key_sc_element: concept_tag_b; concept_tag; concept_sc_text;;
+	*);; 

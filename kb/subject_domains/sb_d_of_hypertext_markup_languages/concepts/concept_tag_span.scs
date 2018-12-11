@@ -1,0 +1,21 @@
+sc_node_not_relation -> concept_tag_span;;
+
+concept_tag_span => nrel_main_idtf: [тег span] (* <-lang_ru;; *);;
+concept_tag_span => nrel_main_idtf: [tag span] (* <-lang_en;; *);;
+concept_tag_span => nrel_idtf: [<span/>] (* <-lang_en;; *);;
+
+concept_tag_span <- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(тег span)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: [Тег <span/>-контейнер для строчных элементов.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> concept_html_document;;
+		-> concept_string_element;;
+		-> concept_block;;
+	*);;
+*);;

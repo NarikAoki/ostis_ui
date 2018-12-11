@@ -1,0 +1,85 @@
+sc_node_struct -> sb_d_of_hypertext_markup_languages;;
+
+sb_d_of_hypertext_markup_languages => nrel_main_idtf:
+	[Предметная область языков гипертекстовой разметки]
+	(* <- lang_ru;; *);
+	[Subject domain of Hypertext Markup Languages]
+	(* <- lang_en;; *);;
+
+sb_d_of_hypertext_markup_languages <- subject_domain;;
+
+sb_d_of_hypertext_markup_languages -> rrel_maximum_studied_object_class: 
+	concept_hypertext_markup_language;;
+
+sb_d_of_hypertext_markup_languages -> rrel_not_maximum_studied_object_class:
+	concept_tag;
+	concept_main_element;
+	concept_autonomic_element;
+	concept_block;
+	concept_built_in_element;
+	concept_container;
+	concept_form_element;
+	concept_html_document;
+	concept_hypertext_markup_language;
+	concept_link;
+	concept_metadata_description_element;
+	concept_selector;
+	concept_string_element;
+	concept_structural_element;
+	concept_tag_a;
+	concept_tag_abbr;
+	concept_tag_audio;
+	concept_tag_b;
+	concept_tag_bdo;
+	concept_tag_body;
+	concept_tag_br;
+	concept_tag_button;
+	concept_tag_del;
+	concept_tag_div;
+	concept_tag_em;
+	concept_tag_footer;
+	concept_tag_form;
+	concept_tag_h1_h6;
+	concept_tag_head;
+	concept_tag_header;
+	concept_tag_hr;
+	concept_tag_html;
+	concept_tag_i;
+	concept_tag_img;
+	concept_tag_input;
+	concept_tag_keygen;
+	concept_tag_li;
+	concept_tag_link;
+	concept_tag_main;
+	concept_tag_mark;
+	concept_tag_meta;
+	concept_tag_nav;
+	concept_tag_object;
+	concept_tag_ol;
+	concept_tag_option;
+	concept_tag_output;
+	concept_tag_progress;
+	concept_tag_q;
+	concept_tag_s;
+	concept_tag_span;
+	concept_tag_strong;
+	concept_tag_style;
+	concept_tag_sub;
+	concept_tag_sup;
+	concept_tag_table;
+	concept_tag_td;
+	concept_tag_textarea;
+	concept_tag_title;
+	concept_tag_tr;
+	concept_tag_u;
+	concept_tag_ul;
+	concept_tag_video;
+	concept_text_format_element;;
+
+sb_d_of_hypertext_markup_languages -> rrel_explored_relation:
+	nrel_class;
+	nrel_html_document_content;
+	nrel_scope;
+	nrel_style;
+	nrel_tag_id;
+	nrel_tag_content;;

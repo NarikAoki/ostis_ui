@@ -1,0 +1,30 @@
+sc_node_not_relation -> concept_tag_body;;
+
+concept_tag_body => nrel_main_idtf: [тег body] (* <- lang_ru;; *);;
+concept_tag_body => nrel_main_idtf: [tag body] (* <- lang_en;; *);;
+concept_tag_body => nrel_idtf: [<body></body>] (* <- lang_en;; *);;
+
+concept_tag_body <- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(тег body)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: [Тег <body></body> определяет видимую часть документа.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> concept_html_document;;
+	*);;
+*);;
+
+concept_tag_body <- rrel_key_sc_element:...
+(*
+	-> rrel_key_sc_element: concept_web_page;;
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(тег body, веб-страница)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: [Открывающий и закрывающий теги <body> на веб-странице не являются обязательными.] (* <- lang_ru;; *);;
+	*);;
+*);;

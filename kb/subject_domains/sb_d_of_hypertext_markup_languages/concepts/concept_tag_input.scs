@@ -1,0 +1,32 @@
+sc_node_not_relation -> concept_tag_input;;
+
+concept_tag_input => nrel_main_idtf: [тег input] (* <-lang_ru;; *);;
+concept_tag_input => nrel_main_idtf: [tag input] (* <-lang_en;; *);;
+concept_tag_input => nrel_idtf: [<input/>] (* <-lang_en;; *);;
+
+concept_tag_input <- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(тег input)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: [Тег <input/>-это тег, предназначенный для создания разлиных элементов интерфейса и обеспечения взаимодействие с пользователем.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> concept_tag;;
+		-> concept_html_document;;
+		-> concept_user_interface_element;;
+		-> ui_user;;
+	*);;
+*);;
+
+concept_tag_input <- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(тег input)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: [Главным образом <input> предназначен для создания текстовых полей, различных кнопок, переключателей и флажков. Это осуществляется за счёт указание значения атрибутов данного тега.](* <- lang_ru;; *);;
+	*);;
+*);;

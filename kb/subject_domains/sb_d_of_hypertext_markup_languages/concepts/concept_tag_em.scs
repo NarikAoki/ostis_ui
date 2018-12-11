@@ -1,0 +1,42 @@
+sc_node_not_relation -> concept_tag_em;;
+
+concept_tag_em => nrel_idtf: [<em></em>](* <- lang_en;; *);;
+concept_tag_em => nrel_main_idtf: [тег em](* <- lang_ru;; *);;
+concept_tag_em => nrel_main_idtf: [tag em](* <- lang_en;; *);;
+
+definition -> ...
+	(*
+		=> nrel_main_idtf: [Опр.(тег em)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: [Тег <em></em> - выделяет важные фрагменты текста курсивом.](* <- lang_ru;; *);;
+		*);;
+		-> rrel_key_sc_element: concept_tag_em;;
+		<= nrel_using_constants :...
+		(*
+			-> concept_sc_text;;
+		*);;
+	*);;
+
+concept_tag_em -> rrel_example: em;;
+
+statement -> ...
+	(*
+		=> nrel_main_idtf: [Утв.(тег em, тег, текст)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: [Допустимо использовать этот тег <em></em> совместно с другими тегами, которые определяют начертание текста.](* <- lang_ru;; *);;
+		*);;
+		-> rrel_key_sc_element: concept_tag_em; concept_tag; concept_sc_text;;
+	*);; 
+
+concept_tag_em <- rrel_key_sc_element:...
+(*
+<-illustration;;<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://images/tag_em.png"
+(*
+=>nrel_format:format_png;;
+*);;
+*);;
+*);;

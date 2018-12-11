@@ -1,0 +1,33 @@
+sc_node_not_relation -> concept_tag_table;;
+
+concept_tag_table => nrel_main_idtf: [тег table] (* <-lang_ru;; *);;
+concept_tag_table => nrel_main_idtf: [tag table] (* <-lang_en;; *);;
+concept_tag_table => nrel_idtf: [<table></table>] (* <-lang_en;; *);;
+
+concept_tag_table <- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(тег table)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: [Тег <table></table> предназначен для элементов, определяющих содержимое таблицы.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> concept_html_document;;
+		-> concept_table;;
+	*);;
+*);;
+
+concept_tag_table <- rrel_key_sc_element:...
+(*
+	-> rrel_key_sc_element: 
+		concept_tag_tr;
+		concept_tag_td;;
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(тег table, тег td, тег tr)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: [Синтаксис: <table> <tr> <td>...</td> </tr> </table>.] (* <- lang_ru;; *);;
+	*);;
+*);;

@@ -1,0 +1,43 @@
+sc_node_not_relation -> concept_tag_bdo;;
+
+concept_tag_bdo => nrel_main_idtf: [tag bdo](* <- lang_en;; *);;
+concept_tag_bdo => nrel_main_idtf: [тег bdo](* <- lang_ru;; *);;
+concept_tag_bdo => nrel_idtf: [<bdo></bdo>](* <- lang_en;; *);;
+
+
+
+definition -> ...
+	(*
+		=> nrel_main_idtf: [Опр.(тег bdo)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: [Тег <bdo></bdo> - задаёт направление написания текста.](* <- lang_ru;; *);;
+		*);;
+		-> rrel_key_sc_element: concept_tag_bdo;;
+		<= nrel_using_constants :...
+		(*
+			-> concept_sc_text;;
+			-> concept_tag;;
+		*);;
+	*);;
+
+statement -> ...
+	(*
+		=> nrel_main_idtf: [Утв.(тег bdo, внешний язык)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: [Тег <bdo></bdo> преимущественно предназначен для использования с языками, где чтение происходит справа налево.](* <- lang_ru;; *);;
+		*);;
+		-> rrel_key_sc_element: concept_tag_bdo; lang_external;;
+	*);; 
+
+concept_tag_bdo <- rrel_key_sc_element:...
+	(*
+	<-illustration;;<=nrel_sc_text_translation:...
+		(*
+		->rrel_example: "file://images/tag_bdo.png"
+		(*
+	=>nrel_format:format_png;;
+		*);;
+	*);;
+*);;

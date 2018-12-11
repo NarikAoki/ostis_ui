@@ -1,0 +1,36 @@
+sc_node_not_relation -> concept_text_format_element;;
+
+concept_text_format_element => nrel_main_idtf: [text format element](* <- lang_en;; *);;
+concept_text_format_element => nrel_idtf: [множество элементов форматирования текста](* <- lang_ru;; *);;
+concept_text_format_element => nrel_main_idtf: [элемент форматирования текста] (* <- lang_ru;; *);;
+
+
+definition -> ...
+	(*
+		=> nrel_main_idtf: [Опр.(элемент форматирования текста)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: [элемент форматирования текста — средство его изменения, такое как выбор начертания шрифта и использование эффектов, позволяющих менять вид текста](* <- lang_ru;; *);;
+		*);;
+		-> rrel_key_sc_element: concept_text_format_element;;
+		<= nrel_using_constants :...
+		(*
+			-> concept_sc_text;;
+		*);;
+	*);;
+
+concept_text_format_element -> rrel_example: mark;;
+
+statement -> ...
+	(*
+		=> nrel_main_idtf: [Утв.(элемент форматирования текста, блочный элемент, строчный элемент)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: [элементы форматирования текста могут быть как строчными, так и блочными](* <- lang_ru;; *);;
+		*);;
+		-> rrel_key_sc_element: concept_text_format_element; concept_string_element; concept_block;;
+	*);;
+
+	concept_text_format_element => nrel_inclusion: concept_tag_abbr; concept_tag_b; concept_tag_bdo; concept_tag_br; concept_tag_del; concept_tag_em;;
+    concept_text_format_element => nrel_inclusion: concept_tag_footer; concept_tag_h1_h6; concept_tag_header; concept_tag_hr; concept_tag_i; concept_tag_mark;;
+    concept_text_format_element => nrel_inclusion: concept_tag_q; concept_tag_s; concept_tag_strong; concept_tag_sub; concept_tag_sup; concept_tag_u;;

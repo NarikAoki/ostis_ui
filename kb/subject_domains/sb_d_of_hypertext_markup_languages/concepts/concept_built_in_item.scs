@@ -1,0 +1,35 @@
+sc_node_not_relation -> concept_built_in_element;;
+
+concept_built_in_element => nrel_main_idtf: [built-in element](* <- lang_en;; *);;
+concept_built_in_element => nrel_idtf: [множество встаиваемых элементов](* <- lang_ru;; *);;
+concept_built_in_element => nrel_main_idtf: [встраиваемый элемент] (* <- lang_ru;; *);;
+
+definition -> ...
+	(*
+		=> nrel_main_idtf: [Опр.(встраиваемый элемент)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: [Встраиваемый элемент —  тег, предназначенный для вставки в документы изображений, аудио- и видеозаписей, а также управления их настройками.](* <- lang_ru;; *);;
+		*);;
+		-> rrel_key_sc_element: concept_built_in_element;;
+		<= nrel_using_constants :...
+		(*
+			-> concept_tag;; 
+			-> concept_html_document;;
+			-> concept_multimedia;;
+		*);;
+	*);;
+
+statement -> ...
+	(*
+		=> nrel_main_idtf: [Утв.(встраиваемый элемент, блочный элемент, строчный элемент)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: [Встраиваемые элементы могут быть как строчными, так и блочными](* <- lang_ru;; *);;
+		*);;
+		-> rrel_key_sc_element: concept_built_in_element; concept_string_element; concept_block;;
+	*);;
+
+	concept_built_in_element => nrel_inclusion: concept_tag_img; concept_tag_video; concept_tag_audio; concept_tag_object;;
+
+concept_multimedia => nrel_main_idtf: [мультимедиа] (* <- lang_ru;; *);;

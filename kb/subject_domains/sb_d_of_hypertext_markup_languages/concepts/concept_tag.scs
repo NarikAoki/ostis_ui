@@ -1,0 +1,40 @@
+sc_node_not_relation -> concept_tag;;
+
+concept_tag => nrel_main_idtf: [тег] (* <- lang_ru;; *);;
+concept_tag => nrel_main_idtf: [tag] (* <- lang_en;; *);;
+concept_tag => nrel_idtf: [дескриптор] (* <- lang_ru;; *);;
+
+concept_tag <- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(тег)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: [Тег - это элемент языка разметки гипертекста.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> nrel_language_unit;;
+		-> concept_hypertext_markup_language;;
+	*);;
+*);;
+
+concept_tag <= nrel_subdividing:...
+(*
+	-> concept_main_element;;
+	-> concept_links;;
+	-> concept_string_element;;
+	-> concept_form_element;;
+	-> concept_built_in_element;;
+	-> concept_metadata_description_element;;
+	-> concept_text_format_element;;
+	=> nrel_main_idtf: [Разбиение по признаку назначения тега] (* <- lang_ru;; *);;
+*);;
+
+concept_tag => nrel_inclusion:concept_autonomic_element;;
+concept_tag => nrel_inclusion:concept_string_element;;
+concept_tag => nrel_inclusion:concept_block;;
+concept_tag => nrel_inclusion:concept_container;;
+
+nrel_language_unit => nrel_idtf: [единица языка*] (* <- lang_ru;; *);;
+

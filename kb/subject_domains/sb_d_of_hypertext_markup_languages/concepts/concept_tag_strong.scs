@@ -1,0 +1,41 @@
+sc_node_not_relation -> concept_tag_strong;;
+
+concept_tag_strong => nrel_idtf: [<strong></strong>](* <- lang_en;; *);;
+concept_tag_strong => nrel_main_idtf: [тег strong](* <- lang_ru;; *);;
+concept_tag_strong => nrel_main_idtf: [tag strong](* <- lang_en;; *);;
+
+definition -> ...
+	(*
+		=> nrel_main_idtf: [Опр.(тег strong)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: [Тег <strong></strong> - выделяет полужирным важный текст.](* <- lang_ru;; *);;
+		*);;
+		-> rrel_key_sc_element: concept_tag_strong;;
+		<= nrel_using_constants :...
+		(*
+			-> concept_tag;;
+			-> concept_sc_text;;
+		*);;
+	*);;
+
+statement -> ...
+	(*
+		=> nrel_main_idtf: [Утв.(тег strong, строчный элемент)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: [Тег <strong></strong> является строчным элементом.](* <- lang_ru;; *);;
+		*);;
+		-> rrel_key_sc_element: concept_tag_strong; concept_string_element;;
+	*);; 
+
+concept_tag_strong <- rrel_key_sc_element:...
+(*
+<-illustration;;<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://images/strong.jpg"
+(*
+=>nrel_format:format_jpg;;
+*);;
+*);;
+*);;

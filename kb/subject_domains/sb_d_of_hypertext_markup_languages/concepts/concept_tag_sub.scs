@@ -1,0 +1,42 @@
+sc_node_not_relation -> concept_tag_sub;;
+
+concept_tag_sub => nrel_idtf: [<sub></sub>](* <- lang_en;; *);;
+concept_tag_sub => nrel_main_idtf: [тег sub](* <- lang_ru;; *);;
+concept_tag_sub => nrel_main_idtf: [tag sub](* <- lang_en;; *);;
+
+definition -> ...
+	(*
+		=> nrel_main_idtf: [Опр.(тег sub)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: [Тег <sub></sub> - подстрочное написание символов.](* <- lang_ru;; *);;
+		*);;
+		-> rrel_key_sc_element: concept_tag_sub;;
+		<= nrel_using_constants :...
+		(*
+			-> concept_symbol;;
+		*);;
+	*);;
+
+statement -> ...
+	(*
+		=> nrel_main_idtf: [Утв.(тег sub, строчный элемент)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: [Тег <sub></sub> является строчным элементом.](* <- lang_ru;; *);;
+		*);;
+		-> rrel_key_sc_element: concept_tag_sub; concept_string_element;;
+	*);; 
+
+concept_symbol => nrel_main_idtf: [символ] (* <- lang_ru;; *);;
+
+concept_tag_sub <- rrel_key_sc_element:...
+(*
+<-illustration;;<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://images/sub.png"
+(*
+=>nrel_format:format_png;;
+*);;
+*);;
+*);;

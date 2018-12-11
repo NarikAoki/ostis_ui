@@ -1,0 +1,42 @@
+sc_node_not_relation -> concept_tag_main;;
+
+concept_tag_main => nrel_idtf: [<main></main>](* <- lang_en;; *);;
+concept_tag_main => nrel_main_idtf: [тег main](* <- lang_ru;; *);;
+concept_tag_main => nrel_main_idtf: [tag main](* <- lang_en;; *);;
+
+definition -> ...
+	(*
+		=> nrel_main_idtf: [Опр.(тег main)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: [Тег <main></main> - контейнер для уникального основного содержимого в пределах одной страницы сайта.](* <- lang_ru;; *);;
+		*);;
+		-> rrel_key_sc_element: concept_tag_main;;
+		<= nrel_using_constants :...
+		(*
+			-> concept_container; nrel_tag_content; concept_web_site; concept_web_page;;
+		*);;
+	*);;
+
+concept_tag_main -> rrel_example: main;;
+
+statement -> ...
+	(*
+		=> nrel_main_idtf: [Утв.(тег main, контейнер)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: [Тег <main></main> является контейнером.](* <- lang_ru;; *);;
+		*);;
+		-> rrel_key_sc_element: concept_tag_main; concept_container;;
+	*);; 
+
+concept_tag_main <- rrel_key_sc_element:...
+(*
+<-illustration;;<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://images/sections.jpg"
+(*
+=>nrel_format:format_jpg;;
+*);;
+*);;
+*);;

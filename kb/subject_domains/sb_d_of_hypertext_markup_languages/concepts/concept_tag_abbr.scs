@@ -1,0 +1,42 @@
+sc_node_not_relation -> concept_tag_abbr;;
+
+concept_tag_abbr => nrel_idtf: [<abbr></abbr>](* <- lang_en;; *);;
+concept_tag_abbr => nrel_main_idtf: [тег abbr](* <- lang_ru;; *);;
+concept_tag_abbr => nrel_main_idtf: [tag abbr](* <- lang_en;; *);;
+
+definition -> ...
+	(*
+		=> nrel_main_idtf: [Опр.(тег abbr)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: [Тег <abbr></abbr> - указывает, что последовательность символов является аббревиатурой.](* <- lang_ru;; *);;
+		*);;
+		-> rrel_key_sc_element: concept_tag_abbr;;
+		<= nrel_using_constants :...
+		(*
+			-> concept_symbol; nrel_sequence;;
+		*);;
+	*);;
+
+statement -> ...
+	(*
+		=> nrel_main_idtf: [Утв.(тег abbr, контейнер)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: [Тег <abbr></abbr> является контейнером.](* <- lang_ru;; *);;
+		*);;
+		-> rrel_key_sc_element: concept_tag_abbr; concept_container;;
+	*);; 
+
+concept_tag_abbr <- rrel_key_sc_element:...
+(*
+<-illustration;;
+<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://images/tag_abbr.png"
+(*
+=>nrel_format:format_png;;
+*);;
+*);;
+*);;
+

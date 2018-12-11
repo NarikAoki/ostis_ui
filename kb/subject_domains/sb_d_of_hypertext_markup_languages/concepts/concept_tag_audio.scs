@@ -1,0 +1,33 @@
+sc_node_not_relation -> concept_tag_audio;;
+
+concept_tag_audio => nrel_main_idtf: [тег audio] (* <- lang_ru;; *);;
+concept_tag_audio => nrel_idtf: [<audio/>] (* <- lang_en;; *);;
+concept_tag_audio => nrel_main_idtf: [tag audio] (* <- lang_en;; *);;
+
+concept_tag_audio <- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(тег audio)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: [Тег <audio/> загружает звуковой контент на веб-страницу.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> concept_tag;;
+		-> concept_audio;;
+		-> concept_web_page;;
+	*);;
+*);;
+
+concept_tag_audio <-rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(тег audio)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: [Путь к файлу задается через атрибут src или вложенный тег <source>.] (* <- lang_ru;; *);;
+	*);;
+*);;
+concept_audio => nrel_main_idtf: [аудио] (* <- lang_ru;; *);;
+

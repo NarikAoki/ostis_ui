@@ -1,0 +1,34 @@
+sc_node_not_relation -> concept_metadata_description_element;;
+
+concept_metadata_description_element => nrel_main_idtf: [metadata description element](* <- lang_en;; *);;
+concept_metadata_description_element => nrel_idtf: [множество элементов описания метаданных](* <- lang_ru;; *);;
+concept_metadata_description_element => nrel_main_idtf: [элемент описания метаданных] (* <- lang_ru;; *);;
+
+
+definition -> ...
+	(*
+		=> nrel_main_idtf: [Опр.(элемент описания метаданных)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: [Элемент описания метаданных —  элемент, задающий вид документа с помощью стилей, поведение отдельных элементов, а также  отношения текущего документа с другими.](* <- lang_ru;; *);;
+		*);;
+		-> rrel_key_sc_element: concept_metadata_description_element;;
+		<= nrel_using_constants :...
+		(*
+			-> concept_tag;; 
+			-> concept_html_document;; 
+			-> concept_style;;
+		*);;
+	*);;
+
+statement -> ...
+	(*
+		=> nrel_main_idtf: [Утв.(элемент описания метаданных, тег head, содержимое тега*)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: [Элементы описания метаданных являются содержимым <head></head>.](* <- lang_ru;; *);;
+		*);;
+		-> rrel_key_sc_element: concept_metadata_description_element; concept_tag_head; nrel_tag_content;;
+	*);;
+
+	concept_metadata_description_element => nrel_inclusion: concept_tag_meta; concept_tag_link; concept_tag_style; concept_tag_title;;

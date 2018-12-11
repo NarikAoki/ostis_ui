@@ -1,0 +1,30 @@
+sc_node_not_relation -> concept_tag_br;;
+
+concept_tag_br => nrel_idtf: [<br>](* <- lang_en;; *);;
+concept_tag_br => nrel_main_idtf: [тег br](* <- lang_ru;; *);;
+concept_tag_br => nrel_main_idtf: [tag br](* <- lang_en;; *);;
+
+definition -> ...
+	(*
+		=> nrel_main_idtf: [Опр.(тег br)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: [Тег <br> - перенос текста на новую строку.](* <- lang_ru;; *);;
+		*);;
+		-> rrel_key_sc_element: concept_tag_br;;
+		<= nrel_using_constants :...
+		(*
+			-> concept_tag;;
+			-> concept_sc_text;;
+		*);;
+	*);;
+
+statement -> ...
+	(*
+		=> nrel_main_idtf: [Утв.(тег br)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: [Использование тега <br> не добавляет пустой отступ перед строкой.](* <- lang_ru;; *);;
+		*);;
+		-> rrel_key_sc_element: concept_tag_br;;
+	*);;

@@ -1,0 +1,35 @@
+sc_node_not_relation -> concept_block;;
+
+concept_block => nrel_main_idtf: [block](* <- lang_en;; *);;
+concept_block => nrel_idtf: [множество блочных элементов] (* <- lang_ru;; *);;
+concept_block => nrel_main_idtf: [блочный элемент] (* <- lang_ru;; *);;
+
+definition -> ...
+	(*
+		=> nrel_main_idtf: [Опр.(блочный элемент)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: [Блочный элемент - элемент, который отображается на веб-странице в виде прямоугольника.](* <- lang_ru;; *);;
+		*);;
+		-> rrel_key_sc_element: concept_block;;
+		<= nrel_using_constants :...
+		(*
+			-> concept_tag;;
+			-> concept_web_page;;
+			-> concept_rectangle;;
+		*);;
+	*);;
+
+
+statement -> ...
+	(*
+		=> nrel_main_idtf: [Утв.(блочный элемент, контйнер)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: [Блочные элементы являются контейнерами](* <- lang_ru;; *);;
+		*);;
+		-> rrel_key_sc_element: concept_block; concept_container;;
+	*);;
+
+	concept_block => nrel_inclusion: concept_tag_hr; concept_tag_h1_h6; concept_tag_form; concept_tag_option;;
+    concept_block => nrel_inclusion: concept_tag_header; concept_tag_main; concept_tag_footer; concept_tag_nav;;

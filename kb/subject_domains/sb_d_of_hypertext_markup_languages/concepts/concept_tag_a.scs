@@ -1,0 +1,30 @@
+sc_node_not_relation -> concept_tag_a;;
+ 
+concept_tag_a => nrel_main_idtf: [тег a] (* <- lang_ru;; *);;
+concept_tag_a => nrel_idtf: [<a></a>] (* <- lang_en;; *);;
+concept_tag_a => nrel_main_idtf: [tag a] (* <- lang_en;; *);;
+
+concept_tag_a <- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(тег a)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: [Тег <a></a> предназначен для создания ссылок.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> concept_tag;;
+		-> concept_link;;
+	*);;
+*);;
+
+concept_tag_a <- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(тег a)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: [В зависимости от присутствия атрибутов name или href тег <a> устанавливает ссылку или якорь.] (* <- lang_ru;; *);;
+	*);;
+*);;

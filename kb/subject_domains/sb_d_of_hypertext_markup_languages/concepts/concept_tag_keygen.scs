@@ -1,0 +1,20 @@
+sc_node_not_relation -> concept_tag_keygen;;
+
+concept_tag_keygen => nrel_main_idtf: [тег keygen] (* <-lang_ru;; *);;
+concept_tag_keygen => nrel_main_idtf: [tag keygen] (* <-lang_en;; *);;
+concept_tag_keygen => nrel_idtf: [<keygen/>] (* <-lang_en;; *);;
+
+concept_tag_keygen <- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(тег keygen)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: [Тег <keygen/>-это тег, предназначенный для генерирования закрытого и открытого ключа.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> concept_tag;;
+		-> concept_html_document;;
+	*);;
+*);;
