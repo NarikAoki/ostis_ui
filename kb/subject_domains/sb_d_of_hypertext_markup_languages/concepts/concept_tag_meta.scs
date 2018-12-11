@@ -1,0 +1,31 @@
+sc_node_not_relation -> concept_tag_meta;;
+
+concept_tag_meta => nrel_idtf: [<meta/>](* <- lang_en;; *);;
+concept_tag_meta => nrel_main_idtf: [тег meta](* <- lang_ru;; *);;
+concept_tag_meta => nrel_main_idtf: [tag meta](* <- lang_en;; *);;
+
+definition -> ...
+	(*
+		=> nrel_main_idtf: [Опр.(тег meta)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: [Тег <meta/> - мета-данные веб-страницы.](* <- lang_ru;; *);;
+		*);;
+		-> rrel_key_sc_element: concept_tag_meta;;
+		<= nrel_using_constants :...
+		(*
+			-> concept_meta_data; concept_web_page;;
+		*);;
+	*);;
+
+concept_meta_data => nrel_main_idtf: [мета-данные] (* <- lang_ru;; *);;
+
+statement -> ...
+	(*
+		=> nrel_main_idtf: [Утв.(тег meta, тег head, содержимое тега*)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: [Тег <meta/> является содержимым <head></head>.](* <- lang_ru;; *);;
+		*);;
+		-> rrel_key_sc_element: concept_tag_meta; concept_tag_head; nrel_tag_content;;
+	*);; 

@@ -1,0 +1,31 @@
+sc_node_not_relation -> concept_tag_button ;;
+
+concept_tag_button => nrel_main_idtf: [тег button] (* <-lang_ru;; *);;
+concept_tag_button => nrel_main_idtf: [tag button] (* <-lang_en;; *);;
+concept_tag_button => nrel_idtf: [<button></button>] (* <-lang_en;; *);;
+
+concept_tag_button <- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(тег button)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: [Тег <button></button>-создает на веб-странице кнопки.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> concept_tag;;
+		-> concept_button;; 
+		-> concept_web_page;;
+	*);;
+*);;
+
+concept_tag_button <- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(тег button)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: [Синтаксис: <button>...</button>, где ... это некоторый текст( или адрес изображения ), который отобразится на созданной кнопке ( в случае с адресом появится изображение ).] (* <- lang_ru;; *);;
+	*);;
+*);;

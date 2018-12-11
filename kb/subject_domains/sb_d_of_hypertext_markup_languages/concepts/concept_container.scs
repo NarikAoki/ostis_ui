@@ -1,0 +1,37 @@
+sc_node_not_relation -> concept_container;;
+
+concept_container => nrel_main_idtf: [built-in item](* <- lang_en;; *);;
+concept_container => nrel_idtf: [множество встаиваемых элементов] (* <- lang_ru;; *);;
+concept_container => nrel_main_idtf: [встраиваемый элемент] (* <- lang_ru;; *);;
+
+definition -> ...
+	(*
+		=> nrel_main_idtf: [Опр.(контейнер)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: [Контейнер — тег, который задаётся с помощью трех компонентов: начальный тег, содержимое тега* и конечный тег.](* <- lang_ru;; *);;
+		*);;
+		-> rrel_key_sc_element: concept_container;;
+		<= nrel_using_constants :...
+		(*
+			-> concept_tag;;
+			-> nrel_tag_content;;
+		*);;
+	*);;
+
+statement -> ...
+	(*
+		=> nrel_main_idtf: [Утв.(контейнер, блочный элемент, строчный элемент)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: [Контейнеры могут быть как строчными, так и блочными](* <- lang_ru;; *);;
+		*);;
+		-> rrel_key_sc_element: concept_container; concept_block; concept_inline;;
+	*);;
+
+	concept_container => nrel_inclusion: concept_tag_html; concept_tag_head; concept_tag_body; concept_tag_h1_h6; concept_tag_abbr;;
+    concept_container => nrel_inclusion: concept_tag_b; concept_tag_q; concept_tag_i; concept_tag_s; concept_tag_span;;
+    concept_container => nrel_inclusion: concept_tag_u; concept_tag_em; concept_tag_sub; concept_tag_sup; concept_tag_div;;
+    concept_container => nrel_inclusion: concept_tag_del; concept_tag_bdo; concept_tag_strong; concept_tag_mark; concept_tag_nav;;
+    concept_container => nrel_inclusion: concept_tag_header; concept_tag_main; concept_tag_footer; concept_tag_form; concept_tag_button;;
+    concept_container => nrel_inclusion: concept_tag_option; concept_tag_progress; concept_tag_output; concept_tag_style; concept_tag_title;;

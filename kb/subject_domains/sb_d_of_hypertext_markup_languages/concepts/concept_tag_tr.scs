@@ -1,0 +1,21 @@
+sc_node_not_relation -> concept_tag_tr;;
+
+concept_tag_tr => nrel_main_idtf: [тег tr] (* <-lang_ru;; *);;
+concept_tag_tr => nrel_main_idtf: [tag tr] (* <-lang_en;; *);;
+concept_tag_tr => nrel_idtf: [<tr></tr>] (* <-lang_en;; *);;
+
+concept_tag_tr <- rrel_key_sc_element:...
+(*
+	<-definition;;
+	=> nrel_main_idtf: [Опр.(тег tr)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: [Тег <tr></tr>-это тег, предназначенный для создания строки таблицы.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> concept_html_document;;
+		-> nrel_row;;
+		-> concept_table;;
+	*);;
+*);;

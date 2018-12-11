@@ -1,0 +1,33 @@
+sc_node_not_relation -> concept_tag_video;;
+
+concept_tag_video => nrel_main_idtf: [тег video] (* <- lang_ru;; *);;
+concept_tag_video => nrel_main_idtf: [tag video] (* <- lang_en;; *);;
+concept_tag_video => nrel_idtf: [<video/>] (* <- lang_en;; *);;
+
+concept_tag_video <- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(тег video)] (* <- lang_ru;; *);; 
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: [Тег <video/> добавляет на страницу видео-файлы.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> concept_html_document;;
+		-> concept_videofile;; 
+		-> concept_web_page;;
+	*);;
+*);;
+
+concept_tag_video <- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(тег video)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: [Путь к файлу задается через атрибут src или вложенный тег <source>.] (* <- lang_ru;; *);;
+	*);;
+*);;
+
+concept_videofile => nrel_main_idtf: [видео-файлы] (* <- lang_ru;; *);;

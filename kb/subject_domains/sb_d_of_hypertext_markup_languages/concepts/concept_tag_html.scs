@@ -1,0 +1,21 @@
+sc_node_not_relation -> concept_tag_html;;
+
+concept_tag_html => nrel_main_idtf: [тег html] (* <- lang_ru;; *);;
+concept_tag_html => nrel_main_idtf: [tag html] (* <- lang_en;; *);;
+concept_tag_html => nrel_idtf: [<html></html>] (* <- lang_en;; *);;
+
+concept_tag_html <- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(тег html)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: [Тег <html></html> указывает программе просмотра страниц что это HTML документ и является контейнером, который заключает в себе всё содержимое веб-страницы.](* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> concept_html_document;;
+		-> nrel_html_document_content;;
+		-> concept_container;;
+	*);;
+*);;

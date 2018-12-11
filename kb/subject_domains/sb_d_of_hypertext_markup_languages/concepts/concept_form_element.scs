@@ -1,0 +1,29 @@
+sc_node_not_relation -> concept_form_element;;
+
+concept_form_element => nrel_main_idtf: [элемент формы] (* <-lang_ru;; *);;
+concept_form_element => nrel_main_idtf: [form element] (* <-lang_en;; *);;
+
+concept_form_element <- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(элемент формы)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		->rrel_example:[Элемент формы-это тег, предназначенный для обмена данными между пользователем и сервером.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> concept_tag;;
+		-> ui_user;;
+	*);;
+*);;
+
+concept_form_element => nrel_inclusion: concept_tag_form;;
+concept_form_element => nrel_inclusion: concept_tag_input;;
+concept_form_element => nrel_inclusion: concept_tag_button;;
+concept_form_element => nrel_inclusion: concept_tag_option;;
+concept_form_element => nrel_inclusion: concept_tag_textarea;;
+concept_form_element => nrel_inclusion: concept_tag_keygen;;
+concept_form_element => nrel_inclusion: concept_tag_progress;;
+concept_form_element => nrel_inclusion: concept_tag_output;;
+concept_form_element => nrel_inclusion: concept_tag_select;;

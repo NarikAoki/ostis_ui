@@ -1,0 +1,34 @@
+sc_node_not_relation -> concept_html_document;;
+
+concept_html_document => nrel_main_idtf: [HTML-документ] (* <- lang_ru;; *);;
+concept_html_document => nrel_main_idtf: [HTML-document] (* <- lang_en;; *);;
+
+concept_html_document <- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(HTML-документ)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: [HTML-документ - это веб-документ, который был сформирован при помощи языка гипертекстовой разметки.](* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> concept_hypertext_markup_language;;
+	*);;
+*);;
+
+concept_html_document <- rrel_key_sc_element:...
+(*
+	<- statement;;
+	-> rrel_key_sc_element: 
+		concept_tag_html; 
+		concept_tag_body;
+		concept_tag_head;
+		concept_tag_title;;
+	=> nrel_main_idtf: [Утв.(HTML-документ, html, head, body, title)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: [В структуру типичного HTML-документа входят такие теги как: <html></html>, <head></head>, <body></body>, <title></title>.] (* <- lang_ru;; *);;
+	*);;
+*);;
+

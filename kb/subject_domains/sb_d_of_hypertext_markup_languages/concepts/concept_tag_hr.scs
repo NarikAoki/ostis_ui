@@ -1,0 +1,44 @@
+sc_node_not_relation -> concept_tag_hr;;
+
+concept_tag_hr => nrel_idtf: [<hr>](* <- lang_en;; *);;
+concept_tag_hr => nrel_main_idtf: [тег hr](* <- lang_ru;; *);;
+concept_tag_hr => nrel_main_idtf: [tag hr](* <- lang_en;; *);;
+
+definition -> ...
+	(*
+		=> nrel_main_idtf: [Опр.(тег hr)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: [Тег <hr> - горизонтальная линия.](* <- lang_ru;; *);;
+		*);;
+		-> rrel_key_sc_element: concept_tag_hr;;
+		<= nrel_using_constants :...
+		(*
+			-> concept_line;;
+		*);;
+	*);;
+
+concept_tag_hr -> rrel_example: hr;;
+
+statement -> ...
+	(*
+		=> nrel_main_idtf: [Утв.(тег hr, блочный элемент)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: [Тег <hr> относится к блочным элементам.](* <- lang_ru;; *);;
+		*);;
+		-> rrel_key_sc_element: concept_tag_hr; concept_block;;
+	*);; 
+
+concept_tag_hr <- rrel_key_sc_element:...
+(*
+<-illustration;;<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://images/hr.png"
+(*
+=>nrel_format:format_png;;
+*);;
+*);;
+*);;
+
+concept_line => nrel_main_idtf: [линия](* <- lang_ru;; *);;

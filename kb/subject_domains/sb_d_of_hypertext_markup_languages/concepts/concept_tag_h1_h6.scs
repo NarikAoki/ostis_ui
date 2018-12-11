@@ -1,0 +1,45 @@
+sc_node_not_relation -> concept_tag_h1_h6;;
+
+concept_tag_h1_h6=> nrel_idtf: [<h1></h1>-<h6></h6>](* <- lang_en;; *);;
+concept_tag_h1_h6 => nrel_main_idtf: [тег h1-h6](* <- lang_ru;; *);;
+concept_tag_h1_h6 => nrel_main_idtf: [tag h1-h6](* <- lang_en;; *);;
+
+definition -> ...
+	(*
+		=> nrel_main_idtf: [Опр.(тег h1-h6)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: [Теги <h1></h1>-<h6></h6> - заголовки шести уровней](* <- lang_ru;; *);;
+		*);;
+		-> rrel_key_sc_element: concept_tag_h1_h6;;
+		<= nrel_using_constants :...
+		(*
+			-> concept_tag;;
+			-> nrel_headline;;
+		*);;
+	*);;
+
+concept_tag_h1_h6 -> rrel_example: h1_h1;;
+
+statement -> ...
+	(*
+		=> nrel_main_idtf: [Утв.(тег h1-h6)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: [Тег <h1></h1>-<h6></h6> удобен для поисковой системы ](* <- lang_ru;; *);;
+		*);;
+		-> rrel_key_sc_element: concept_tag_h1_h6;;
+	*);;
+
+concept_tag_h1_h6 <- rrel_key_sc_element:...
+(*
+<-illustration;;<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://images/h1_h6.jpg"
+(*
+=>nrel_format:format_jpg;;
+*);;
+*);;
+*);;
+
+nrel_headline => nrel_main_idtf: [заголовок*](* <- lang_ru;; *);;

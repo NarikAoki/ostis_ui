@@ -1,0 +1,31 @@
+sc_node_not_relation -> concept_tag_q;;
+
+concept_tag_q => nrel_idtf: [<q></q>](* <- lang_en;; *);;
+concept_tag_q => nrel_main_idtf: [тег q](* <- lang_ru;; *);;
+concept_tag_q => nrel_main_idtf: [tag q](* <- lang_en;; *);;
+
+definition -> ...
+	(*
+		=> nrel_main_idtf: [Опр.(тег q)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: [Тег <q></q> - краткая цитата.](* <- lang_ru;; *);;
+		*);;
+		-> rrel_key_sc_element: concept_tag_q;;
+		<= nrel_using_constants :...
+		(*
+			-> concept_sc_text;;
+		*);;
+	*);;
+
+statement -> ...
+	(*
+		=> nrel_main_idtf: [Утв.(тег q, содержимое тега*)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: [содержимое тега* тега <q></q> выделяется кавычками.](* <- lang_ru;; *);;
+		*);;
+		-> rrel_key_sc_element: concept_tag_q; nrel_tag_content;;
+	*);; 
+
+concept_text => nrel_main_idtf: [текст] (* <- lang_ru;; *);;

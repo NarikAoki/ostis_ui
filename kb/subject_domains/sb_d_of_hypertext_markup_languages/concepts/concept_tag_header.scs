@@ -1,0 +1,44 @@
+sc_node_not_relation -> concept_tag_header;;
+
+concept_tag_header => nrel_idtf: [<header></header>](* <- lang_en;; *);;
+concept_tag_header => nrel_main_idtf: [тег header](* <- lang_ru;; *);;
+concept_tag_header => nrel_main_idtf: [tag header](* <- lang_en;; *);;
+
+definition -> ...
+	(*
+		=> nrel_main_idtf: [Опр.(тег header)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: [Тег <header></header> - секция для вводной информации сайта или группы навигационных ссылок.](* <- lang_ru;; *);;
+		*);;
+		-> rrel_key_sc_element: concept_tag_header;;
+		<= nrel_using_constants :...
+		(*
+			-> concept_web_site;;
+		*);;
+	*);;
+
+concept_tag_header -> rrel_example: header;;
+
+statement -> ...
+	(*
+		=> nrel_main_idtf: [Утв.(тег header, контейнер)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: [Тег <header></header> является контейнером.](* <- lang_ru;; *);;
+		*);;
+		-> rrel_key_sc_element: concept_tag_header; concept_container;;
+	*);; 
+
+concept_web_site => nrel_main_idtf: [сайт] (* <- lang_ru;; *);;
+
+concept_tag_header <- rrel_key_sc_element:...
+(*
+<-illustration;;<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://images/sections.jpg"
+(*
+=>nrel_format:format_jpg;;
+*);;
+*);;
+*);;

@@ -1,0 +1,29 @@
+sc_node_not_relation -> concept_main_element;;
+
+concept_main_element => nrel_main_idtf: [main element] (* <- lang_en;; *);;
+concept_main_element => nrel_main_idtf: [главный элемент] (* <- lang_ru;; *);;
+concept_main_element => nrel_idtf: [тег верхнего уровня] (* <- lang_ru;; *);;
+
+concept_main_element <- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(главный элемент)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: [Главный элемент - это тег, предназначенный для формирования структуры веб-страницы и определения раздела заголовка и тела документа.](* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> concept_web_page;;
+		-> concept_html_document;;
+		-> concept_tag_head;;
+		-> concept_tag_body;;
+		-> concept_tag;;
+	*);;
+*);;
+
+concept_main_element => nrel_inclusion: concept_tag_html;;
+concept_main_element => nrel_inclusion: concept_tag_head;;
+concept_main_element => nrel_inclusion: concept_tag_body;;
+
+concept_web_page => nrel_main_idtf: [веб-страница] (* <- lang_ru;; *);;

@@ -1,0 +1,31 @@
+sc_node_not_relation -> concept_link;;
+
+concept_link => nrel_main_idtf: [ссылка] (* <- lang_ru;; *);;
+concept_link => nrel_main_idtf: [link] (* <- lang_en;; *);;
+
+concept_link <- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(ссылка)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		->rrel_example: [Ссылка-это тег предназначенный для добавление ссылок на страницу.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> concept_web_page;;
+		-> concept_tag;;
+	*);;
+*);;
+
+concept_link <- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(ссылка)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: [Ссылки являются основой гипертекстовых документов и позволяют переходить с одной веб-страницы на другую.] (* <- lang_ru;; *);;
+	*);;
+*);;
+
+concept_link => nrel_inclusion: concept_tag_a;;

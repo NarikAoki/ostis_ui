@@ -1,0 +1,31 @@
+sc_node_not_relation -> concept_structural_element;;
+
+concept_structural_element => nrel_main_idtf: [структурный элемент] (* <-lang_ru;; *);;
+concept_structural_element => nrel_main_idtf:[structural element] (* <-lang_en;; *);;
+
+concept_structural_element <- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(структурный элемент)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example:[Структурный элемент-это тег, задающий структуру страницы и её отдельных элементов.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> concept_tag;;
+	*);;
+*);;
+
+concept_structural_element => nrel_inclusion: concept_tag_div;;
+concept_structural_element => nrel_inclusion: concept_tag_span;;
+concept_structural_element => nrel_inclusion: concept_tag_header;;
+concept_structural_element => nrel_inclusion: concept_tag_main;;
+concept_structural_element => nrel_inclusion: concept_tag_footer;;
+concept_structural_element => nrel_inclusion: concept_tag_nav;;
+concept_structural_element => nrel_inclusion: concept_tag_table;;
+concept_structural_element => nrel_inclusion: concept_tag_ol;;
+concept_structural_element => nrel_inclusion: concept_tag_ul;;
+concept_structural_element => nrel_inclusion: concept_tag_li;;
+concept_structural_element => nrel_inclusion: concept_tag_tr;;
+concept_structural_element => nrel_inclusion: concept_tag_td;;

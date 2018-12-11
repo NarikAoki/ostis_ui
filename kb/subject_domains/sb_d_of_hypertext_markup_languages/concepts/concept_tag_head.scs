@@ -1,0 +1,35 @@
+sc_node_not_relation -> concept_tag_head;;
+
+concept_tag_head => nrel_main_idtf: [тег head] (* <- lang_ru;; *);;
+concept_tag_head => nrel_idtf: [<head></head>] (* <- lang_en;; *);;
+concept_tag_head => nrel_main_idtf: [tag head] (* <- lang_en;; *);;
+
+concept_tag_head <- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(тег head)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: [Тег <head></head> определяет место, где помещается различная информация не отображаемая в теле документа, а также здесь располагается тег названия документа и теги для поисковых машин.](* <- lang_ru;; *);;
+	*);;
+	<=nrel_using_constants:...
+	(*
+		-> concept_tag;;
+		-> concept_html_document;;
+		-> concept_tag_title;;
+	*);;
+*);;
+
+concept_tag_head <- rrel_key_sc_element:...
+(*
+	-> rrel_key_sc_element: 
+		concept_tag_title; 
+		concept_tag_style; 
+		concept_tag_meta;;
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(тег head, тег title, тег style, тег meta)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(* 
+		-> rrel_example: [Внутри контейнера <head> допускается размещать следующие элементы: <link>, <meta>, <style>, <title>.] (* <- lang_ru;; *);;
+	*);;
+*);;

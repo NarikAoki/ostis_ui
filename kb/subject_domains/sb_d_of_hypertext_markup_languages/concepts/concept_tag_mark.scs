@@ -1,0 +1,42 @@
+sc_node_not_relation -> concept_tag_mark;;
+
+concept_tag_mark => nrel_idtf: [<mark></mark>](* <- lang_en;; *);;
+concept_tag_mark => nrel_main_idtf: [тег mark](* <- lang_ru;; *);;
+concept_tag_mark => nrel_main_idtf: [tag mark](* <- lang_en;; *);;
+
+definition -> ...
+	(*
+		=> nrel_main_idtf: [Опр.(тег mark)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: [Тег <mark></mark> - выделяет фрагменты текста желтым фоном.](* <- lang_ru;; *);;
+		*);;
+		-> rrel_key_sc_element: concept_tag_mark;;
+		<= nrel_using_constants :...
+		(*
+			-> concept_text; concept_tag; nrel_background;;
+		*);;
+	*);;
+
+statement -> ...
+	(*
+		=> nrel_main_idtf: [Утв.(тег mark, фон*, стиль)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: [Фон тега <mark></mark> может быть изменён с помощью стилей.](* <- lang_ru;; *);;
+		*);;
+		-> rrel_key_sc_element: concept_tag_mark; nrel_background; concept_style;;
+	*);; 
+
+nrel_background => nrel_main_idtf: [фон* ] (* <- lang_ru;; *);;
+
+concept_tag_mark <- rrel_key_sc_element:...
+(*
+<-illustration;;<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://images/mark.png"
+(*
+=>nrel_format:format_png;;
+*);;
+*);;
+*);;

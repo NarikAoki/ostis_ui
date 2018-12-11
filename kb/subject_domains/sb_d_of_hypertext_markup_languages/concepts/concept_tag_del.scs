@@ -1,0 +1,42 @@
+sc_node_not_relation -> concept_tag_del;;
+
+concept_tag_del => nrel_idtf: [<del></del>](* <- lang_en;; *);;
+concept_tag_del => nrel_main_idtf: [тег del](* <- lang_ru;; *);;
+concept_tag_del => nrel_main_idtf: [tag del](* <- lang_en;; *);;
+
+definition -> ...
+	(*
+		=> nrel_main_idtf: [Опр.(тег del)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: [Тег <del></del> - перечёркивает текст, помечая как удаленный.](* <- lang_ru;; *);;
+		*);;
+		-> rrel_key_sc_element: concept_tag_del;;
+		<= nrel_using_constants :...
+		(*
+			-> concept_sc_text;;
+		*);;
+	*);;
+
+concept_tag_del -> rrel_example: del;;
+
+statement -> ...
+	(*
+		=> nrel_main_idtf: [Утв.(тег del, строчный элемент)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: [Тег <del></del> является строчным элементом.](* <- lang_ru;; *);;
+		*);;
+		-> rrel_key_sc_element: concept_tag_del; concept_string_element;;
+	*);; 
+
+concept_tag_del <- rrel_key_sc_element:...
+(*
+<-illustration;;<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://images/tag_del.png"
+(*
+=>nrel_format:format_png;;
+*);;
+*);;
+*);;

@@ -1,0 +1,43 @@
+sc_node_not_relation -> concept_tag_footer;;
+
+concept_tag_footer => nrel_idtf: [<footer></footer>](* <- lang_en;; *);;
+concept_tag_footer => nrel_main_idtf: [тег footer](* <- lang_ru;; *);;
+concept_tag_footer => nrel_main_idtf: [tag footer](* <- lang_en;; *);;
+
+definition -> ...
+	(*
+		=> nrel_footer_idtf: [Опр.(тег footer)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: [Тег <footer></footer> - секция для нижнего колонтитула документа или раздела.](* <- lang_ru;; *);;
+		*);;
+		-> rrel_key_sc_element: concept_tag_footer;;
+		<= nrel_using_constants :...
+		(*
+			-> concept_tag;;
+			-> concept_html_document;;
+		*);;
+	*);;
+
+concept_tag_footer -> rrel_example: footer;;
+
+statement -> ...
+	(*
+		=> nrel_footer_idtf: [Утв.(тег footer, контейнер)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: [Тег <footer></footer> является контейнером.](* <- lang_ru;; *);;
+		*);;
+		-> rrel_key_sc_element: concept_tag_footer; concept_container;;
+	*);; 
+
+concept_tag_footer <- rrel_key_sc_element:...
+(*
+<-illustration;;<=nrel_sc_text_translation:...
+(*
+->rrel_example: "file://images/sections.jpg"
+(*
+=>nrel_format:format_jpg;;
+*);;
+*);;
+*);;

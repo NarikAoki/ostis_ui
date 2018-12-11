@@ -1,0 +1,41 @@
+sc_node_norole_relation -> nrel_class;;
+
+nrel_class => nrel_main_idtf:[класс*] (* <- lang_ru;; *);;
+nrel_class => nrel_main_idtf:[class*] (* <- lang_en;; *);;
+
+nrel_class <- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(класс*)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: [Класс* - бинарное ориентированное отношение, первым компонентом связок которого является некоторый тег, а вторым — sc-текст, который является именем класса, которое позволяет связать тег со стилевым оформлением.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> concept_tag;;
+		-> concept_sc_text;;
+		-> nrel_style;;
+	*);;
+*);;
+
+nrel_class <- binary_relation;;
+parameter -> arity;;
+arity -> binary_relation;;
+binary_relation => nrel_measurement: 2;;
+2 <- number;;
+nrel_class <- oriented_relation;;
+antisymmetric_relation -> nrel_class;;
+antitransitive_relation -> nrel_class;;
+antireflexive_relation -> nrel_class;;
+
+nrel_class => nrel_first_domain: concept_tag;;
+nrel_class => nrel_second_domain: concept_sc_text;;
+concept_tag <-...
+(*
+	-> concept_sc_text;;
+	=> nrel_combination:...
+	(*
+		<= nrel_definitional_domain: nrel_class;;
+	*);;
+*);;

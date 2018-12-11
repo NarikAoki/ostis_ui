@@ -1,0 +1,33 @@
+sc_node_not_relation -> concept_tag_title;;
+
+concept_tag_title => nrel_idtf: [<title></title>](* <- lang_en;; *);;
+concept_tag_title => nrel_main_idtf: [тег title](* <- lang_ru;; *);;
+concept_tag_title => nrel_main_idtf: [tag title](* <- lang_en;; *);;
+
+definition -> ...
+	(*
+		=> nrel_main_idtf: [Опр.(тег title)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: [Тег <title></title> - заголовок / имя html-документа.](* <- lang_ru;; *);;
+		*);;
+		-> rrel_key_sc_element: concept_tag_title;;
+		<= nrel_using_constants :...
+		(*
+			-> nrel_headline; nrel_name; concept_html_document;;
+		*);;
+	*);;
+
+concept_tag_title -> rrel_example: title;;
+
+statement -> ...
+	(*
+		=> nrel_main_idtf: [Утв.(тег title,тег head, содержимое тега*)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: [Тег <title></title> является содержимым <head></head>.](* <- lang_ru;; *);;
+		*);;
+		-> rrel_key_sc_element: concept_tag_title; concept_tag_head; nrel_tag_content;;
+	*);; 
+
+nrel_name => nrel_main_idtf: [имя*](* <- lang_ru;; *);;

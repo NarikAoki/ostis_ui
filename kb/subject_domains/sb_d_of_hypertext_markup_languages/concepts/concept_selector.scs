@@ -1,0 +1,32 @@
+sc_node_not_relation -> concept_selector;;
+
+concept_selector => nrel_main_idtf: [selector](* <- lang_en;; *);;
+concept_selector => nrel_idtf: [множество селекторов](* <- lang_ru;; *);;
+concept_selector => nrel_main_idtf: [селектор] (* <- lang_ru;; *);;
+
+
+definition -> ...
+	(*
+		=> nrel_main_idtf: [Опр.(селектор)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: [Селектор  - это формальное описание того элемента или группы элементов, к которым применяется указанное правило стиля.](* <- lang_ru;; *);;
+		*);;
+		-> rrel_key_sc_element: concept_selector;;
+		<= nrel_using_constants :...
+		(*
+			-> concept_style;;
+		*);;
+	*);;
+
+statement -> ...
+	(*
+		=> nrel_main_idtf: [Утв.(селектор, существование*, класс)](* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:...
+		(*
+			-> rrel_example: [Существует 11 классов селекторов](* <- lang_ru;; *);;
+		*);;
+		-> rrel_key_sc_element: concept_selector; class; nrel_existance;;
+	*);;
+
+concept_style => nrel_main_idtf: [стиль] (* <- lang_ru;; *);;

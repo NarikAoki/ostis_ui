@@ -1,0 +1,24 @@
+sc_node_not_relation -> concept_hypertext_markup_language;;
+
+concept_hypertext_markup_language => nrel_main_idtf: [язык гипертекстовой разметки] (* <- lang_ru;; *);;
+concept_hypertext_markup_language => nrel_main_idtf: [hypertext markup language] (* <- lang_en;; *);;
+
+concept_hypertext_markup_language <- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(язык гипертекстовой разметки)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+		(*
+		-> rrel_example:[Язык гипертекстовой разметки - это стандартизированный язык разметки документов.](* <- lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:...
+		(*
+		-> concept_document;;
+		-> lang_external;;
+		*);;
+*);;
+
+concept_hypertext_markup_language => nrel_language_unit: concept_tag;;
+
+concept_document => nrel_main_idtf: [документ] (* <- lang_ru;; *);;
+nrel_language_unit => nrel_main_idtf: [единица языка*] (* <- lang_ru;; *);;

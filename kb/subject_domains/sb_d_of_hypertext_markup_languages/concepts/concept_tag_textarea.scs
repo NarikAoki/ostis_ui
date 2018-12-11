@@ -1,0 +1,33 @@
+sc_node_not_relation -> concept_tag_textarea;;
+
+concept_tag_textarea => nrel_main_idtf: [тег textarea] (* <-lang_ru;; *);;
+concept_tag_textarea => nrel_main_idtf: [tag textarea] (* <-lang_en;; *);;
+concept_tag_textarea => nrel_idtf: [<textarea/>] (* <-lang_en;; *);;
+
+concept_tag_textarea <- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(тег textarea)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: [Тег <textarea/>-это тег, предназначенный для создания области, в которую можно вводить несколько строк текста.](* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> concept_html_document;;
+		-> nrel_row;;
+		-> concept_text_field;;
+	*);;
+*);;
+
+concept_tag_textarea <- rrel_key_sc_element:...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: "file://images/Tag_textarea.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

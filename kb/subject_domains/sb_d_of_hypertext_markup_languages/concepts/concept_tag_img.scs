@@ -1,0 +1,30 @@
+sc_node_not_relation -> concept_tag_img;;
+
+concept_tag_img => nrel_main_idtf: [тег img] (* <- lang_ru;; *);;
+concept_tag_img => nrel_main_idtf: [tag img] (* <- lang_en;; *);;
+concept_tag_img => nrel_idtf: [<img/>] (* <- lang_en;; *);;
+
+concept_tag_img <- rrel_key_sc_element:...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(тег img)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: [Тег <img/> встраивает изображения в HTML-документ.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants:...
+	(*
+		-> concept_html_document;; 
+		-> image;;
+	*);;
+*);;
+
+concept_tag_img <- rrel_key_sc_element:...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв.(тег img)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> rrel_example: [Адрес файла с картинкой задаётся через атрибут src.] (* <- lang_ru;; *);;
+	*);;
+*);;
