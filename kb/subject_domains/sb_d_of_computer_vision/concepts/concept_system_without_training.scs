@@ -1,0 +1,17 @@
+concept_system_without_training => nrel_idtf:[system without training] (* <-lang_en;; *);;
+definition->...
+(*
+	/*<= nrel_using_constants:...
+		(*
+			
+		*);;
+	*/
+	=> nrel_main_idtf: [Опр.(система без обучения)] (* <-lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Cистема без обучения - система, для которой количества априорной информации достаточно для определения алфавита признаков, формирования словаря признаков и определения границ классов.]
+		(* <-lang_ru;; *);;
+	*);;
+	
+		-> rrel_key_sc_element:concept_system_without_training;;
+*);;

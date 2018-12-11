@@ -1,0 +1,17 @@
+concept_color_balance_evaluation => nrel_idtf:[color balance evaluation] (* <-lang_en;; *);;
+definition->...
+(*
+	<= nrel_using_constants:...
+		(*
+			->image;;
+		*);;
+	
+	=> nrel_main_idtf: [Опр.(оценка цветового баланса)] (* <-lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Оценка цветового баланса - оценка соответствия цветовой гаммы изображения объекта цветовой гамме объекта съёмки.]
+		(* <-lang_ru;; *);;
+	*);;
+	
+		-> rrel_key_sc_element:concept_color_balance_evaluation;;
+*);;

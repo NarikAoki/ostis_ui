@@ -1,0 +1,11 @@
+sc_node_not_relation -> concept_text_data;;
+concept_text_data => nrel_main_idtf: [текстовые данные] (* <- lang_ru;; *);;
+concept_text_data <- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(текстовые данные)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+        -> rrel_example: [текстовые данные — представление информации в вычислительной системе в виде последовательности печатных символов.] (* <- lang_ru;; *);;
+	*);;
+*);;

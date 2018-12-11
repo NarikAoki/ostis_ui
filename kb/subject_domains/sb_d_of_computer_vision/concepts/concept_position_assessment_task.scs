@@ -1,0 +1,17 @@
+concept_position_assessment_task => nrel_idtf:[position assessment task] (* <-lang_en;; *);;
+definition->...
+(*
+	<= nrel_using_constants:...
+		(*
+			->nrel_orientation;;
+		*);;
+	
+	=> nrel_main_idtf: [Опр.(задача оценки положения)] (* <-lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Задача оценки положения  - задача определения положения или ориентации определённого объекта относительно камеры. ]	
+		(* <-lang_ru;; *);;
+	*);;
+	
+		-> rrel_key_sc_element:concept_position_assessment_task;;
+*);;

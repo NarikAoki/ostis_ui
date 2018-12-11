@@ -1,0 +1,28 @@
+concept_image_sharpness_estimate => nrel_idtf:[image sharpness estimate] (* <-lang_en;; *);;
+definition->...
+(*
+	<= nrel_using_constants:...
+		(*
+			->image;;
+			->concept_optical_density;;
+		*);;
+	
+	=> nrel_main_idtf: [Опр.(оценка резкости изображения)] (* <-lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Оценка резкости изображения - это оценка четкости границы между соседними участками изображения с различной оптической плотностью.]
+		(* <-lang_ru;; *);;
+	*);;
+	
+		-> rrel_key_sc_element:concept_image_sharpness_estimate;;
+*);;
+statement->...
+	(*
+		=>nrel_idtf:[Утв.(оценка резкости изображения, изображение, разрешение изображения, чёткость изображения)] (* <-lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+		(*
+			->[Резкость изображения измеряется быстротой изменения оптической плотности в направлении, перпендикулярном границе участка изображения. На воспринимаемую резкость изображения влияют два фундаментальных фактора: разрешение и чёткость изображения.](* <-lang_ru;; *);;
+		*);;
+		
+		->rrel_key_sc_element:concept_image_sharpness_estimate;image;concept_image_resolution;concept_image_clarity;concept_optical_density;;
+	*);;

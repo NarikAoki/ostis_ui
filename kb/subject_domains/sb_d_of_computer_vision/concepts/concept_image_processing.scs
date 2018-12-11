@@ -1,0 +1,32 @@
+concept_image_processing => nrel_idtf:[image processing] (* <-lang_en;; *);;
+concept_image_processing => nrel_used_method:concept_pixel_count;concept_binarization;concept_image_segmentation;;
+concept_image_processing => nrel_used_method:concept_barcode_reading;concept_optical_character_recognition;;
+concept_image_processing => nrel_used_method:concept_measurement;concept_edge_detection;concept_pattern_matching;;
+concept_image_processing => nrel_inclusion:concept_image_analysis;;
+definition->...
+(*
+	<= nrel_using_constants:...
+		(*
+			->image;;
+		*);;
+	=> nrel_main_idtf: [Опр.(обработка изображений)] (* <-lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Обработка изображений - любая форма обработки информации, для которой входные данные представлены изображением. ]
+		(* <-lang_ru;; *);;
+	*);;
+	
+		-> rrel_key_sc_element:concept_image_processing;;
+*);;
+statement->...
+	(*
+		=>nrel_idtf:[Утв.(обработка изображений, изображение, информация)] (* <-lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+		(*
+			->[Обработка изображений может осуществляться как для получения изображения на выходе, так и для получения другой информации. Кроме статичных двухмерных изображений, обрабатывать требуется также изображения, изменяющиеся со временем, например, видео.]
+			(* <-lang_ru;; *);;
+		*);;
+		
+		->rrel_key_sc_element:concept_image_processing;concept_information;image;;
+	*);;
+

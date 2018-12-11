@@ -1,0 +1,143 @@
+sc_node_not_relation->concept_computer_vision;;
+concept_computer_vision=>nrel_main_idtf:
+[компьютерное зрение](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_detection;;
+concept_detection=>nrel_main_idtf:
+[обнаружение](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_tracking;;
+concept_tracking=>nrel_main_idtf:
+[отслеживание](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_object_classification;;
+concept_object_classification=>nrel_main_idtf:
+[классификация объектов](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_image_analysis;;
+concept_image_analysis=>nrel_main_idtf:
+[анализ изображений](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_image_sensor;;
+concept_image_sensor=>nrel_main_idtf:
+[датчик изображений](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_image_processing;;
+concept_image_processing=>nrel_main_idtf:
+[обработка изображений](* <-lang_ru;; *);;
+
+sc_node_not_relation->sb_d_computer_vision;;
+sb_d_computer_vision=>nrel_main_idtf:
+[Предметная область компьютерного зрения](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_machine_vision;;
+concept_machine_vision=>nrel_main_idtf:
+[машинное зрение](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_recognition_task;;
+concept_recognition_task=>nrel_main_idtf:
+[задача распознавания](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_pixel_count;;
+concept_pixel_count=>nrel_main_idtf:
+[счётчик пикселей](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_binarization;;
+concept_binarization=>nrel_main_idtf:
+[бинаризация](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_image_segmentation;;
+concept_image_segmentation=>nrel_main_idtf:
+[сегментация изображений](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_barcode_reading;;
+concept_barcode_reading=>nrel_main_idtf:
+[чтение штрих-кодов](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_optical_character_recognition;;
+concept_optical_character_recognition=>nrel_main_idtf:
+[оптическое распознавание символов](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_measurement;;
+concept_measurement=>nrel_main_idtf:
+[измерение](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_edge_detection;;
+concept_edge_detection=>nrel_main_idtf:
+[обнаружение краёв](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_pattern_matching;;
+concept_pattern_matching=>nrel_main_idtf:
+[сопоставление шаблонов](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_image_resolution;;
+concept_image_resolution=>nrel_main_idtf:
+[разрешение изображения](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_image_sharpness_estimate;;
+concept_image_sharpness_estimate=>nrel_main_idtf:
+[оценка резкости изображения](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_color_balance_evaluation;;
+concept_color_balance_evaluation=>nrel_main_idtf:
+[оценка цветового баланса](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_image_clarity;;
+concept_image_clarity=>nrel_main_idtf:
+[чёткость изображения](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_optical_density;;
+concept_optical_density=>nrel_main_idtf:
+[оптическая плотность](* <-lang_ru;; *);;
+	
+sc_node_not_relation->concept_robotics;;
+concept_robotics=>nrel_main_idtf:
+[робототехника](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_identification;;
+concept_identification=>nrel_main_idtf:
+[идентификация](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_task_of_finding_images_by_content;;
+concept_task_of_finding_images_by_content=>nrel_main_idtf:
+[задача поиска изображений по содержанию](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_position_assessment_task;;
+concept_position_assessment_task=>nrel_main_idtf:
+[задача оценки положения](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_optical_character_recognition_task;;
+concept_optical_character_recognition_task=>nrel_main_idtf:
+[задача оптического распознавания символов](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_system_without_training;;
+concept_system_without_training=>nrel_main_idtf:
+[система без обучения](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_alphabet_of_signs;;
+concept_alphabet_of_signs=>nrel_main_idtf:
+[алфавит признаков](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_feature_dictionary;;
+concept_feature_dictionary=>nrel_main_idtf:
+[словарь признаков](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_teacher_learning_system;;
+concept_teacher_learning_system=>nrel_main_idtf:
+[система, обучающаяся с учителем](* <-lang_ru;; *);;
+
+sc_node_not_relation->concept_self_learning_system;;
+concept_self_learning_system=>nrel_main_idtf:
+[самообучающаяся система](* <-lang_ru;; *);;
+
+sc_node_norole_relation->nrel_used_method;;
+nrel_used_method=>nrel_main_idtf:
+[используемый метод*](* <-lang_ru;; *);;
+
+sc_node_norole_relation->nrel_used_task;;
+nrel_used_task=>nrel_main_idtf:
+[используемая задача*](* <-lang_ru;; *);;
+
+sc_node_norole_relation->nrel_used_system;;
+nrel_used_system=>nrel_main_idtf:
+[используемая система*](* <-lang_ru;; *);;

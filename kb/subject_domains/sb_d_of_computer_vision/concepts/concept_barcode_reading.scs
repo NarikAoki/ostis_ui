@@ -1,0 +1,16 @@
+concept_barcode_reading => nrel_idtf:[barcode reading] (* <-lang_en;; *);;
+definition->...
+(*
+	<= nrel_using_constants:...
+		(*
+			->concept_decoding;;
+		*);;
+	=> nrel_main_idtf: [Опр.(чтение штрих-кодов)] (* <-lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Чтение штрих-кодов - процесс декодирования 1D и 2D кодов, разработанных для считывания или сканирования машинами.]
+		(* <-lang_ru;; *);;
+	*);;
+	
+		-> rrel_key_sc_element:concept_barcode_reading;;
+*);;

@@ -1,0 +1,17 @@
+concept_edge_detection => nrel_idtf:[edge detection] (* <-lang_en;; *);;
+definition->...
+(*
+	/*<= nrel_using_constants:...
+		(*
+			->
+		*);;
+	*/
+	=> nrel_main_idtf: [Опр.(обнаружение краёв)] (* <-lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Обнаружение краев - поиск краев объектов.]
+		(* <-lang_ru;; *);;
+	*);;
+	
+		-> rrel_key_sc_element:concept_edge_detection;;
+*);;

@@ -1,0 +1,19 @@
+concept_measurement => nrel_idtf:[measurement] (* <-lang_en;; *);;
+definition->...
+(*
+	/*<= nrel_using_constants:...
+		(*
+			->
+		*);;
+	*/
+	=> nrel_main_idtf: [Опр.(измерение)] (* <-lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Измерение - измерение размеров объектов в дюймах или миллиметрах.
+]
+		(* <-lang_ru;; *);;
+	*);;
+	
+		-> rrel_key_sc_element:concept_measurement;;
+*);;
+

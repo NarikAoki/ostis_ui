@@ -1,0 +1,22 @@
+concept_image_analysis => nrel_inclusion:concept_image_sharpness_estimate;concept_color_balance_evaluation;;
+concept_image_analysis => nrel_idtf:[image analysis] (* <-lang_en;; *);;
+definition->...
+(*
+	<= nrel_using_constants:...
+		(*
+			->image;;
+			->concept_color;;
+			->nrel_size;;
+		*);;
+	
+	=> nrel_main_idtf: [Опр.(анализ изображений)] (* <-lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Анализ изображений - процесс определения качества полученного изображения, оценки его информативности, нахождения объектов на изображении и определения их характеристик, как цвет, размер и т.д. 
+]
+		(* <-lang_ru;; *);;
+	*);;
+	
+		-> rrel_key_sc_element:concept_image_analysis;;
+*);;
+

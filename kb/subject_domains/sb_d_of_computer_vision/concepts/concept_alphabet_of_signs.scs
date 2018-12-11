@@ -1,0 +1,17 @@
+concept_alphabet_of_signs => nrel_idtf:[alphabet of signs] (* <-lang_en;; *);;
+definition->...
+(*
+	<= nrel_using_constants:...
+		(*
+			->concept_recognition_task;;
+		*);;
+	
+	=> nrel_main_idtf: [Опр.(алфавит признаков)] (* <-lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Алфавит признаков - полный набор признаков для решения задач распознавания.]
+		(* <-lang_ru;; *);;
+	*);;
+	
+		-> rrel_key_sc_element:concept_alphabet_of_signs;;
+*);;

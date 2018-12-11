@@ -1,0 +1,17 @@
+sc_node_not_relation -> concept_segmentation_system;;
+concept_segmentation_system => nrel_main_idtf: [система сегментации] (* <- lang_ru;; *);;
+concept_segmentation_system <- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(система сегментации)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+        -> rrel_example: [система сегментации — система компьютерного зрения, разделяющая изображение на области, для которых выполняется определенный критерий однородности, по определенному методу сегментации.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+    (*
+        -> concept_computer_vision;;
+        -> image;;
+        -> concept_homogeneity_criterion;;
+    *);;
+*);;

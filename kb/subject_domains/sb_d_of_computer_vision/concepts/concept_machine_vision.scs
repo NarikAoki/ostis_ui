@@ -1,0 +1,31 @@
+concept_machine_vision => nrel_idtf:[machine vision] (* <-lang_en;; *);;
+concept_computer_vision <= nrel_used_task:concept_identification;concept_detection;;
+
+definition->...
+(*
+	<= nrel_using_constants:...
+		(*
+			->image;;
+			->concept_robotics;;
+		*);;
+	
+	=> nrel_main_idtf: [Опр.(машинное зрение)] (* <-lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Машинное зрение - это научное направление в области искусственного интеллекта, в частности робототехники, и связанные с ним технологии получения изображений объектов реального мира и их обработки. ]
+		(* <-lang_ru;; *);;
+	*);;
+	
+		-> rrel_key_sc_element:concept_machine_vision;;
+*);;
+statement->...
+	(*
+		=>nrel_idtf:[Утв.(машинное зрение, изображение)] (* <-lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+		(*
+			->[Машинное зрение сосредотачивается на применении в промышленности и производстве. Цель машинного зрения - принятие решений о реальных физических объектах и сценах, основываясь на воспринимаемых изображениях.]
+			(* <-lang_ru;; *);;
+		*);;
+		
+		->rrel_key_sc_element:concept_machine_vision;image;;
+	*);;

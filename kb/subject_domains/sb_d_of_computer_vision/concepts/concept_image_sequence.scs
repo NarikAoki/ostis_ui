@@ -1,0 +1,17 @@
+sc_node_not_relation -> concept_image_sequence;;
+concept_image_sequence => nrel_main_idtf: [последовательность изображений] (* <- lang_ru;; *);;
+concept_image_sequence <- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(последовательность изображений)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+        -> rrel_example: [последовательность изображений — ориентированное множество изображений, порядок которых указан явно.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+    (*
+        -> concept_computer_vision;;
+        -> image;;
+        -> concept_homogeneity_criterion;;
+    *);;
+*);;

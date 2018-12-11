@@ -1,0 +1,17 @@
+concept_optical_density => nrel_idtf:[optical_density] (* <-lang_en;; *);;
+definition->...
+(*
+	/*<= nrel_using_constants:...
+		(*
+			->
+		*);;
+	*/
+	=> nrel_main_idtf: [Опр.(оптическая плотность)] (* <-lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Оптическая плотность - мера ослабления света прозрачными объектами или отражения света непрозрачными объектами.
+](* <-lang_ru;; *);;
+	*);;
+	
+		-> rrel_key_sc_element:concept_optical_density;;
+*);;

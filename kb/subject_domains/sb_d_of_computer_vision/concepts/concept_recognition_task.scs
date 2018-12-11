@@ -1,0 +1,30 @@
+concept_recognition_task => nrel_idtf:[recognition task] (* <-lang_en;; *);;
+concept_recognition_task => nrel_used_task:concept_task_of_finding_images_by_content;concept_position_assessment_task;concept_optical_character_recognition_task;;
+concept_recognition_task => nrel_used_system:concept_system_without_training;concept_self_learning_system;concept_teacher_learning_system;;
+definition->...
+(*
+	<= nrel_using_constants:...
+		(*
+			->concept_identification;;
+		*);;
+	
+	=> nrel_main_idtf: [Опр.(задача распознавания)] (* <-lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Задача распознавания - задача идентификации предметов, явлений, процессов, сигналов, ситуаций и т. п. объектов, которые характеризуются конечным набором некоторых свойств и признаков. ]
+(* <-lang_ru;; *);;
+	*);;
+	
+		-> rrel_key_sc_element:concept_recognition_task;;
+*);;
+statement->...
+	(*
+		=>nrel_idtf:[Утв.(задача распознавания)] (* <-lang_ru;; *);;
+		<=nrel_sc_text_translation:...
+		(*
+			->[Задача распознавания состоит в преобразовании исходных данных к виду, удобному для распознавания, и собственно в распознавании (указание принадлежности объекта определенному классу).]
+			(* <-lang_ru;; *);;
+		*);;
+		
+		->rrel_key_sc_element:concept_recognition_task;;
+	*);;

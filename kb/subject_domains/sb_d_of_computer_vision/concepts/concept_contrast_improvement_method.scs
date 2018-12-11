@@ -1,0 +1,16 @@
+sc_node_not_relation -> concept_contrast_improvement_method;;
+concept_contrast_improvement_method => nrel_main_idtf: [метод улучшения контрастности] (* <- lang_ru;; *);;
+concept_contrast_improvement_method <- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(метод улучшения контрастности)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+        -> rrel_example: [метод улучшения контрастности  — метод системы предварительной обработки, используемый для облегчения обнаружения нужной информации на изображении.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+    (*
+        -> concept_preprocessing_system;;
+        -> image;;
+    *);;
+*);;

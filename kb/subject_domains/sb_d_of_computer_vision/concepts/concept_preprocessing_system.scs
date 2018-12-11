@@ -1,0 +1,16 @@
+sc_node_not_relation -> concept_preprocessing_system;;
+concept_preprocessing_system => nrel_main_idtf: [система предварительной обработки] (* <- lang_ru;; *);;
+concept_preprocessing_system <- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(система предварительной обработки)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+        -> rrel_example: [система предварительной обработки — система компьютерного зрения, обрабатывающая изображение по определенному методу.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+    (*
+        -> concept_computer_vision;;
+        -> image;;
+    *);;
+*);;

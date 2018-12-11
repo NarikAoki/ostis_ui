@@ -1,0 +1,17 @@
+sc_node_not_relation -> concept_text_recognising;;
+concept_text_recognising => nrel_main_idtf: [распознавание текста] (* <- lang_ru;; *);;
+concept_text_recognising <- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(распознавание текста)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+        -> rrel_example: [распознавание текста — процесс нахождения текста на изображении и его перевода в текстовые данные.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+    (*
+        -> process;;
+        -> image;;
+        -> concept_text_data;;
+    *);;
+*);;

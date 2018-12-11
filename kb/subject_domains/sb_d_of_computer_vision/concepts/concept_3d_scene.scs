@@ -1,0 +1,15 @@
+sc_node_not_relation -> concept_3d_scene;;
+concept_3d_scene => nrel_main_idtf: [3D сцена] (* <- lang_ru;; *);;
+concept_3d_scene <- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(3D сцена)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+        -> rrel_example: [3D сцена  — пространство, в котором могут находится геометрические фигуры и геометрические тела.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+    (*
+        -> concept_space;;
+    *);;
+*);;

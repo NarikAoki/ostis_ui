@@ -1,0 +1,18 @@
+//Сопоставление шаблонов
+concept_pattern_matching => nrel_idtf:[pattern matching] (* <-lang_en;; *);;
+definition->...
+(*
+	/*<= nrel_using_constants:...
+		(*
+			->
+		*);;
+	*/
+	=> nrel_main_idtf: [Опр.(сопоставление шаблонов)] (* <-lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Сопоставление шаблонов - поиск, подбор, и/или подсчет конкретных моделей.]
+		(* <-lang_ru;; *);;
+	*);;
+	
+		-> rrel_key_sc_element:concept_pattern_matching;;
+*);;

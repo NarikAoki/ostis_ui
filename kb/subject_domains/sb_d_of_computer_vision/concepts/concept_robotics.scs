@@ -1,0 +1,18 @@
+concept_robotics => nrel_idtf:[robotics] (* <-lang_en;; *);;
+definition->...
+(*
+	<= nrel_using_constants:...
+		(*
+			->image;;
+			->concept_robotics;;
+		*);;
+	
+	=> nrel_main_idtf: [Опр.(робототехника)] (* <-lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Робототехника - прикладная наука, занимающаяся разработкой автоматизированных технических систем.]
+(* <-lang_ru;; *);;
+	*);;
+	
+		-> rrel_key_sc_element:concept_robotics;;
+*);;

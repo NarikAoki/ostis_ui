@@ -1,0 +1,17 @@
+sc_node_not_relation -> concept_3d_shape_recovery_from_images;;
+concept_3d_shape_recovery_from_images => nrel_main_idtf: [восстановление 3D формы по 2D изображениям] (* <- lang_ru;; *);;
+concept_3d_shape_recovery_from_images <- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(восстановление 3D формы по 2D изображениям)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+        -> rrel_example: [восстановление 3D формы по 2D изображениям — процесс создания трехмерной модели с помощью изображений.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+    (*
+        -> process;;
+        -> concept_3d_model;;
+        -> image;;
+    *);;
+*);;

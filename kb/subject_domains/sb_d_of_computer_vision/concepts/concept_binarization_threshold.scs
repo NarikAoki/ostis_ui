@@ -1,0 +1,17 @@
+sc_node_not_relation -> concept_binarization_threshold;;
+concept_binarization_threshold => nrel_main_idtf: [пороговое значение бинаризации] (* <- lang_ru;; *);;
+concept_binarization_threshold <- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(пороговое значение бинаризации)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+        -> rrel_example: [пороговое значение бинаризации — число, с которым сравнивается яркость каждого пикселя при бинаризации. По результатам сравнения, пикселю присваивается значение 0 или 1.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+    (*
+        -> number;;
+        -> concept_pixel;;
+        -> concept_binarization;;
+    *);;
+*);;

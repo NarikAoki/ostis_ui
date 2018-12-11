@@ -1,0 +1,17 @@
+sc_node_not_relation -> concept_resampling_method;;
+concept_resampling_method => nrel_main_idtf: [метод повторной выборки] (* <- lang_ru;; *);;
+concept_resampling_method <- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(метод повторной выборки)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+        -> rrel_example: [метод повторной выборки  — метод системы предварительной обработки, используемый для подтверждения правильности координатной системы изображения.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+    (*
+        -> concept_preprocessing_system;;
+        -> concept_coordinate_system;;
+        -> image;;
+    *);;
+*);;

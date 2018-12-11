@@ -1,0 +1,17 @@
+sc_node_not_relation -> concept_image_acquisition_system;;
+concept_image_acquisition_system => nrel_main_idtf: [система получения изображений] (* <- lang_ru;; *);;
+concept_image_acquisition_system <- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(система получения изображений)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+        -> rrel_example: [система получения изображений — система компьютерного зрения, получающая изображение с помощью датчиков изображения.] (* <- lang_ru;; *);;
+	*);;
+	<= nrel_using_constants: ...
+    (*
+        -> concept_computer_vision;;
+        -> image;;
+        -> concept_image_sensor;;
+    *);;
+*);;

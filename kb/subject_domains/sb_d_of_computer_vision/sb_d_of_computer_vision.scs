@@ -1,0 +1,72 @@
+sc_node_struct -> sb_d_of_computer_vision;;
+
+sb_d_of_computer_vision => nrel_main_idtf:
+	[Предметная область компьтерного зрения]
+	(* <- lang_ru;; *);
+	[Subject domain of computer vision]
+	(* <- lang_en;; *);;
+
+sb_d_of_computer_vision <- subject_domain;;
+
+sb_d_of_computer_vision -> rrel_maximum_studied_object_class: concept_computer_vision;;
+
+sb_d_of_computer_vision -> rrel_not_maximum_studied_object_class: 
+concept_computer_vision;
+concept_detection;
+concept_tracking;
+concept_object_classification;
+concept_image_analysis;
+concept_image_sensor;
+concept_image_processing;
+concept_machine_vision;
+concept_recognition_task;
+concept_pixel_count;
+concept_binarization;
+concept_image_segmentation;
+concept_barcode_reading;
+concept_optical_character_recognition;
+concept_measurement;
+concept_edge_detection;
+concept_pattern_matching;
+concept_image_resolution;
+concept_image_sharpness_estimate;
+concept_color_balance_evaluation;
+concept_image_clarity;
+concept_optical_density;
+concept_robotics;
+concept_identification;
+concept_task_of_finding_images_by_content;
+concept_position_assessment_task;
+concept_optical_character_recognition_task;
+concept_system_without_training;
+concept_alphabet_of_signs;
+concept_feature_dictionary;
+concept_teacher_learning_system;
+concept_self_learning_system;
+concept_3d_model;
+concept_3d_scene;
+concept_3d_shape_recovery_from_images;
+concept_binarization;
+concept_binarization_threshold;
+concept_contrast_improvement_method;
+concept_detail_selection_system;
+concept_global_binarization;
+concept_homogeneity_criterion;
+concept_image_acquisition_system;
+concept_image_noiseconcept_image_recovery_task;
+concept_image_sensor;
+concept_image_sequence;
+concept_local_binarization;
+concept_movement_task;
+concept_noise_removal_method;
+concept_object_classification;
+concept_optical_flow_analysis;
+concept_per_pixel_analysis;
+concept_preprocessing_system;
+concept_resampling_method;
+concept_scaling_method;
+concept_scene_recovery_task;
+concept_segmentation_system;
+concept_text_data;
+concept_text_recognising;
+concept_tracking;;

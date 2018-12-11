@@ -1,0 +1,17 @@
+concept_optical_character_recognition_task => nrel_idtf:[optical character recognition task] (* <-lang_en;; *);;
+definition->...
+(*
+	<= nrel_using_constants:...
+		(*
+			->image;;
+		*);;
+	
+	=> nrel_main_idtf: [Опр.(задача оптического распознавания знаков)] (* <-lang_ru;; *);;
+	<= nrel_sc_text_translation:...
+	(*
+		-> [Задача оптического распознавания знаков - задача распознавания символов на изображениях печатного или рукописного текста, обычно для перевода в текстовый формат, наиболее удобный для редактирования или индексации. ]	
+		(* <-lang_ru;; *);;
+	*);;
+	
+		-> rrel_key_sc_element:concept_optical_character_recognition_task;;
+*);;
