@@ -1,0 +1,26 @@
+lib_component_proc_checking_autonomic_element
+=> nrel_main_idtf:
+	[Компонент библиотеки. Scp-программа проверки корректности использования автономных элементов]
+	(* <- lang_ru;; *);
+	[Library component. Scp-program of checking the correct use of autonomic elements]
+	(* <- lang_en;; *);
+
+<- library_of_platform_independent_reusable_components;
+
+-> rrel_key_sc_element: 
+	proc_checking_autonomic_element;
+
+<- rrel_key_sc_element: 
+	...
+	(*
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://htmls/proc_checking_autonomic_element_html.html" 
+				(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+lib_component_proc_checking_autonomic_element = [*^"file://proc_checking_autonomic_element_html.scsi"*];;

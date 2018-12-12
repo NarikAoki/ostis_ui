@@ -1,0 +1,351 @@
+agent_of_verifying_correctness_of_html_snippet_for_html
+=> nrel_main_idtf:
+	[агентная scp-программа проверки корректности html-фрагмента(с позиции HTML)] (* <- lang_ru;; *);
+	[agent scp-program of verifying correctness of html snippet(HTML)] (* <- lang_en;; *);
+	<- agent_scp_program;;
+
+scp_program -> agent_of_verifying_correctness_of_html_snippet_for_html
+	(*
+	-> rrel_params: .agent_of_verifying_correctness_of_html_snippet_for_html_params
+		(*
+		-> rrel_1: rrel_in: _event;;
+		-> rrel_2: rrel_in: _input_arc;;
+		*);;
+
+	-> rrel_operators: .agent_of_verifying_correctness_of_html_snippet_for_html_operator_set
+		(*
+		-> rrel_init: .agent_of_verifying_correctness_of_html_snippet_for_html_operator1A
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _temp;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _quest;;
+
+			=> nrel_goto: .agent_of_verifying_correctness_of_html_snippet_for_html_operator1B;;
+			*);;
+                 
+		-> .agent_of_verifying_correctness_of_html_snippet_for_html_operator1B
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: action_of_verifying_correctness_of_html_snippet_for_html;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+			=> nrel_then: .agent_of_verifying_correctness_of_html_snippet_for_html_operator1C;;
+			=> nrel_else: .agent_of_verifying_correctness_of_html_snippet_for_html_operator_return;;
+			*);;
+
+		-> .agent_of_verifying_correctness_of_html_snippet_for_html_operator1C
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _param;;
+
+			=> nrel_then: .agent_of_verifying_correctness_of_html_snippet_for_html_operator1D;;
+			=> nrel_else: .agent_of_verifying_correctness_of_html_snippet_for_html_operator_return;;
+			*);;
+
+		-> .agent_of_verifying_correctness_of_html_snippet_for_html_operator1D
+			(*
+			<- genEl;;
+
+			-> rrel_1: rrel_assign: rrel_node: rrel_scp_var: rrel_const: _answer_for_verifying_correctness_of_html_snippet_for_html;;
+
+			=> nrel_goto: .agent_of_verifying_correctness_of_html_snippet_for_html_operator1E;;
+			*);;
+
+		-> .agent_of_verifying_correctness_of_html_snippet_for_html_operator1E			
+			(*
+			<-contAssign;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: rrel_link: _check;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: [1];;
+
+			=> nrel_goto: .agent_of_verifying_correctness_of_html_snippet_for_html_operator2A;;
+			*);;
+
+		-> .agent_of_verifying_correctness_of_html_snippet_for_html_operator2A
+			(*
+			<- searchElStr3;;
+			
+            		-> rrel_1: rrel_fixed: rrel_scp_const: concept_container;; 
+            		-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;; 
+            		-> rrel_3: rrel_fixed: rrel_scp_var: _param;; 
+                  
+ 			=> nrel_then: .agent_of_verifying_correctness_of_html_snippet_for_html_operator2C;;
+  			=> nrel_else: .agent_of_verifying_correctness_of_html_snippet_for_html_operator2E;;
+            		*);;
+
+            	-> .agent_of_verifying_correctness_of_html_snippet_for_html_operator2C
+			(*
+			<- searchElStr3;;
+			
+            		-> rrel_1: rrel_fixed: rrel_scp_const: concept_tag_ol;; 
+            		-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;; 
+            		-> rrel_3: rrel_fixed: rrel_scp_var: _param;; 
+                  
+ 			=> nrel_then: .agent_of_verifying_correctness_of_html_snippet_for_html_operator6;;
+  			=> nrel_else: .agent_of_verifying_correctness_of_html_snippet_for_html_operator2D;;
+            *);;
+
+            -> .agent_of_verifying_correctness_of_html_snippet_for_html_operator2D
+			(*
+			<- searchElStr3;;
+			
+            		-> rrel_1: rrel_fixed: rrel_scp_const: concept_tag_ul;; 
+            		-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;; 
+            		-> rrel_3: rrel_fixed: rrel_scp_var: _param;; 
+                  
+ 			=> nrel_then: .agent_of_verifying_correctness_of_html_snippet_for_html_operator6;;
+  			=> nrel_else: .agent_of_verifying_correctness_of_html_snippet_for_html_operator4;;
+            *);;
+
+            -> .agent_of_verifying_correctness_of_html_snippet_for_html_operator2E
+			(*
+			<- searchElStr3;;
+			
+            -> rrel_1: rrel_fixed: rrel_scp_const: concept_autonomic_element;; 
+            -> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;; 
+            -> rrel_3: rrel_fixed: rrel_scp_var: _param;; 
+                  
+ 			=> nrel_then: .agent_of_verifying_correctness_of_html_snippet_for_html_operator7;;
+  			=> nrel_else: .agent_of_verifying_correctness_of_html_snippet_for_html_operator3A;;
+            *);;
+
+            -> .agent_of_verifying_correctness_of_html_snippet_for_html_operator4
+			(*
+			<- call;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: proc_checking_container_html;; 
+		  	-> rrel_2: rrel_fixed: rrel_scp_const: .agent_of_verifying_correctness_of_html_snippet_for_html_params
+				(*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _param;; 
+		  		-> rrel_2: rrel_fixed: rrel_scp_var: _check;;
+				*);;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _descr;;
+
+		  	=> nrel_goto: .agent_of_verifying_correctness_of_html_snippet_for_html_operator4_wait;;
+			*);;
+
+		-> .agent_of_verifying_correctness_of_html_snippet_for_html_operator4_wait
+			(*
+			<- waitReturn;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
+
+			=> nrel_goto: .agent_of_verifying_correctness_of_html_snippet_for_html_operator3B;;
+			*);;
+
+		-> .agent_of_verifying_correctness_of_html_snippet_for_html_operator6
+			(*
+			<- call;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: proc_checking_lists_html;; 
+		  	-> rrel_2: rrel_fixed: rrel_scp_const: .agent_of_verifying_correctness_of_html_snippet_for_html_params
+				(*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _param;; 
+		  		-> rrel_2: rrel_fixed: rrel_scp_var: _check;;
+				*);;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _descr;;
+
+		  	=> nrel_goto: .agent_of_verifying_correctness_of_html_snippet_for_html_operator6_wait;;
+			*);;
+
+		-> .agent_of_verifying_correctness_of_html_snippet_for_html_operator6_wait
+			(*
+			<- waitReturn;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
+
+			=> nrel_goto: .agent_of_verifying_correctness_of_html_snippet_for_html_operator3B;;
+			*);;
+
+
+		-> .agent_of_verifying_correctness_of_html_snippet_for_html_operator7
+			(*
+			<- call;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: proc_checking_autonomic_element;; 
+		  	-> rrel_2: rrel_fixed: rrel_scp_const: .agent_of_verifying_correctness_of_html_snippet_for_html_params
+				(*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _param;; 
+		  		-> rrel_2: rrel_fixed: rrel_scp_var: _check;;
+				*);;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _descr;;
+
+		  	=> nrel_goto: .agent_of_verifying_correctness_of_html_snippet_for_html_operator7_wait;;
+			*);;
+
+		-> .agent_of_verifying_correctness_of_html_snippet_for_html_operator7_wait
+			(*
+			<- waitReturn;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
+
+			=> nrel_goto: .agent_of_verifying_correctness_of_html_snippet_for_html_operator3B;;
+			*);;
+
+            -> .agent_of_verifying_correctness_of_html_snippet_for_html_operator3A
+			(*
+			<- contMult;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _check;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _check;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: [2];;
+
+			=> nrel_goto: .agent_of_verifying_correctness_of_html_snippet_for_html_operator3B;;
+			*);;
+
+			-> .agent_of_verifying_correctness_of_html_snippet_for_html_operator3B
+			(*
+			<- ifEq;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _check;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: [2];;
+
+			=> nrel_then: .agent_of_verifying_correctness_of_html_snippet_for_html_comment_fail;;
+  			=> nrel_else: .agent_of_verifying_correctness_of_html_snippet_for_html_operator3C;;
+			*);;
+
+			-> .agent_of_verifying_correctness_of_html_snippet_for_html_operator3C
+			(*
+			<- ifEq;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _check;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: [1];;
+
+			=> nrel_then: .agent_of_verifying_correctness_of_html_snippet_for_html_comment_correct;;
+  			=> nrel_else: .agent_of_verifying_correctness_of_html_snippet_for_html_operator3D;;
+			*);;
+
+			-> .agent_of_verifying_correctness_of_html_snippet_for_html_operator3D
+			(*
+			<- ifEq;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _check;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: [0];;
+
+			=> nrel_goto: .agent_of_verifying_correctness_of_html_snippet_for_html_comment_wrong;;
+			*);;
+
+			-> .agent_of_verifying_correctness_of_html_snippet_for_html_comment_wrong
+            (*
+		  	<- call;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_generating_comment;; 
+		  	-> rrel_2: rrel_fixed: rrel_scp_const: .agent_of_verifying_correctness_of_html_snippet_for_html_comment_wrong_params
+				(*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _param;; 
+		  		-> rrel_2: rrel_fixed: rrel_scp_const: [HTML snippet is not correct!];;
+		  		-> rrel_3: rrel_fixed: rrel_scp_var: _answer_for_verifying_correctness_of_html_snippet_for_html;;
+				*);;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _descr;;
+
+		  	=> nrel_goto: .agent_of_verifying_correctness_of_html_snippet_for_html_comment_wrong_wait;;
+			*);;
+
+		-> .agent_of_verifying_correctness_of_html_snippet_for_html_comment_wrong_wait
+			(*
+			<- waitReturn;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
+
+			=> nrel_goto: .agent_of_verifying_correctness_of_html_snippet_for_html_operator13B;;
+			*);;
+
+			-> .agent_of_verifying_correctness_of_html_snippet_for_html_comment_correct
+                 	(*
+		  	<- call;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_generating_comment;; 
+		  	-> rrel_2: rrel_fixed: rrel_scp_const: .agent_of_verifying_correctness_of_html_snippet_for_html_comment_correct_params
+				(*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _param;; 
+		  		-> rrel_2: rrel_fixed: rrel_scp_const: [HTML snippet is correct!];;
+		  		-> rrel_3: rrel_fixed: rrel_scp_var: _answer_for_verifying_correctness_of_html_snippet_for_html;;
+				*);;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _descr;;
+
+		  	=> nrel_goto: .agent_of_verifying_correctness_of_html_snippet_for_html_comment_correct_wait;;
+			*);;
+
+		-> .agent_of_verifying_correctness_of_html_snippet_for_html_comment_correct_wait
+			(*
+			<- waitReturn;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
+
+			=> nrel_goto: .agent_of_verifying_correctness_of_html_snippet_for_html_operator13A;;
+			*);;
+
+			-> .agent_of_verifying_correctness_of_html_snippet_for_html_comment_fail
+                 	(*
+		  	<- call;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_generating_comment;; 
+		  	-> rrel_2: rrel_fixed: rrel_scp_const: .agent_of_verifying_correctness_of_html_snippet_for_html_comment_fail_params
+				(*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _param;; 
+		  		-> rrel_2: rrel_fixed: rrel_scp_const: [Wrong parameter!];;
+		  		-> rrel_3: rrel_fixed: rrel_scp_var: _answer_for_verifying_correctness_of_html_snippet_for_html;;
+				*);;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _descr;;
+
+		  	=> nrel_goto: .agent_of_verifying_correctness_of_html_snippet_for_html_comment_fail_wait;;
+			*);;
+
+		-> .agent_of_verifying_correctness_of_html_snippet_for_html_comment_fail_wait
+			(*
+			<- waitReturn;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
+
+			=> nrel_goto: .agent_of_verifying_correctness_of_html_snippet_for_html_operator13B;;
+			*);;
+
+
+			-> .agent_of_verifying_correctness_of_html_snippet_for_html_operator13A
+                  	(*
+		  	<- genElStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: question_finished_successfully;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+		  	=> nrel_goto: .agent_of_verifying_correctness_of_html_snippet_for_html_operator16;;
+			*);;  
+
+		-> .agent_of_verifying_correctness_of_html_snippet_for_html_operator13B 
+                 	(*
+		  	<- genElStr3;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: question_finished_unsuccessfully;; 
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+		  	=> nrel_goto: .agent_of_verifying_correctness_of_html_snippet_for_html_operator16;;
+			*);;
+
+        ->.agent_of_verifying_correctness_of_html_snippet_for_html_operator16
+			(*
+			<- genElStr5;;
+		  	
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_common: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _answer_for_verifying_correctness_of_html_snippet_for_html;;
+			-> rrel_4: rrel_assign:rrel_pos_const_perm: rrel_const: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
+
+			=> nrel_goto: .agent_of_verifying_correctness_of_html_snippet_for_html_operator_return;;
+			*);; 
+
+		-> .agent_of_verifying_correctness_of_html_snippet_for_html_operator_return
+			(*
+			<- return;;
+			*);;
+		*);; 
+	*);;

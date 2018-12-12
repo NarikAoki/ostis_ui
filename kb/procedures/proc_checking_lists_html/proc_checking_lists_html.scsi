@@ -1,0 +1,198 @@
+scp_program -> proc_checking_lists_html
+(*	
+	-> rrel_params: .proc_checking_lists_html_params
+		(* 
+		->rrel_1: rrel_in: _param;;
+		->rrel_2: rrel_in: _check;;
+		*);;
+
+	-> rrel_operators: .proc_checking_lists_html_operator_set
+		(*
+		-> rrel_init: .proc_checking_lists_html_operator1
+			(*
+			<- searchElStr3;;
+			
+            		-> rrel_1: rrel_fixed: rrel_scp_const: concept_tag_ol;; 
+            		-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;; 
+            		-> rrel_3: rrel_fixed: rrel_scp_var: _param;; 
+                  
+ 			=> nrel_then: .proc_checking_lists_html_operator2;;
+  			=> nrel_else: .proc_checking_lists_html_operator1A;;
+            		*);;
+
+        	-> .proc_checking_lists_html_operator1A
+			(*
+			<- searchElStr3;;
+			
+            		-> rrel_1: rrel_fixed: rrel_scp_const: concept_tag_ul;; 
+            		-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;; 
+            		-> rrel_3: rrel_fixed: rrel_scp_var: _param;; 
+                  
+ 			=> nrel_then: .proc_checking_lists_html_operator2;;
+  			=> nrel_else: .proc_checking_lists_html_operator_wrong;;
+            		*);;
+
+    		-> .proc_checking_lists_html_operator2
+			(*
+			<-searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _param;;
+            		-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc2;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _elem;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc3;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_tag_content;;
+
+			=> nrel_then: .proc_checking_lists_html_operator2A;;
+  			=> nrel_else: .proc_checking_lists_html_operator_wrong;;
+			*);;
+
+		-> .proc_checking_lists_html_operator_wrong
+			(*
+			<- contMult;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _check;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _check;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: [0];;
+
+			=> nrel_goto: .proc_checking_lists_html_operator_return;;
+			*);;
+
+		-> .proc_checking_lists_html_operator2A
+			(*
+			<- searchElStr3;;
+			
+            		-> rrel_1: rrel_fixed: rrel_scp_const: set;; 
+            		-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;; 
+            		-> rrel_3: rrel_fixed: rrel_scp_var: _elem;; 
+                  
+ 			=> nrel_then: .proc_checking_lists_html_operator2B;;
+  			=> nrel_else: .proc_checking_lists_html_operator_wrong;;
+            		*);;
+
+        	-> .proc_checking_lists_html_operator2B
+			(*
+			<- searchSetStr3;;
+			
+            		-> rrel_1: rrel_fixed: rrel_scp_var: _elem;; 
+            		-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+            		-> rrel_3: rrel_assign: rrel_scp_var: _elements;; 
+
+            		->rrel_set_3: rrel_assign: rrel_scp_var: _set;;
+                  
+ 			=> nrel_then: .proc_checking_lists_html_operator3;;
+  			=> nrel_else: .proc_checking_lists_html_operator_wrong;;
+            		*);;
+
+		-> .proc_checking_lists_html_operator3
+			(*
+			<- searchElStr3;;
+			
+            		-> rrel_1: rrel_fixed: rrel_scp_var: _set;; 
+            		-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+            		-> rrel_3: rrel_assign: rrel_scp_var: _elem;; 
+                  
+ 			=> nrel_then: .proc_checking_lists_html_operator4;;
+  			=> nrel_else: .proc_checking_lists_html_operator_return;;
+            		*);;
+
+		-> .proc_checking_lists_html_operator4
+			(*
+			<- eraseEl;;
+
+            		-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+                                  
+ 			=> nrel_goto: .proc_checking_lists_html_operator5A;;
+               		*);;
+
+		-> .proc_checking_lists_html_operator5A
+			(*
+			<- searchElStr3;;
+			
+            		-> rrel_1: rrel_fixed: rrel_scp_const: concept_tag_li;; 
+            		-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;; 
+            		-> rrel_3: rrel_fixed: rrel_scp_var: _elem;; 
+                  
+ 			=> nrel_then: .proc_checking_lists_html_operator6;;
+  			=> nrel_else: .proc_checking_lists_html_operator5B;;
+            		*);;
+
+            	-> .proc_checking_lists_html_operator5B
+			(*
+			<- searchElStr3;;
+			
+            		-> rrel_1: rrel_fixed: rrel_scp_const: concept_tag_ol;; 
+            		-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;; 
+            		-> rrel_3: rrel_fixed: rrel_scp_var: _elem;; 
+                  
+ 			=> nrel_then: .proc_checking_lists_html_operator7;;
+  			=> nrel_else: .proc_checking_lists_html_operator5C;;
+            		*);;
+
+            	-> .proc_checking_lists_html_operator5C
+			(*
+			<- searchElStr3;;
+			
+            		-> rrel_1: rrel_fixed: rrel_scp_const: concept_tag_ul;; 
+            		-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;; 
+            		-> rrel_3: rrel_fixed: rrel_scp_var: _elem;; 
+                  
+ 			=> nrel_then: .proc_checking_lists_html_operator7;;
+  			=> nrel_else: .proc_checking_lists_html_operator_wrong;;
+            		*);;
+
+        	-> .proc_checking_lists_html_operator6
+			(*
+			<-searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _elem;;
+            		-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc2;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _elem_set;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc3;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_tag_content;;
+
+			=> nrel_then: .proc_checking_lists_html_operator6A;;
+  			=> nrel_else: .proc_checking_lists_html_operator_wrong;;
+			*);;
+
+		-> .proc_checking_lists_html_operator6A
+			(*
+			<- searchElStr3;;
+			
+            		-> rrel_1: rrel_fixed: rrel_scp_const: concept_sc_text;; 
+            		-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+            		-> rrel_3: rrel_fixed: rrel_scp_var: _elem_set;; 
+                  
+ 			=> nrel_then: .proc_checking_lists_html_operator3;;
+  			=> nrel_else: .proc_checking_lists_html_operator_wrong;;
+            		*);;
+
+		-> .proc_checking_lists_html_operator7
+			(*
+			<- call;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_const: proc_checking_lists_html;; 
+		  	-> rrel_2: rrel_fixed: rrel_scp_const: .proc_checking_lists_html_params
+				(*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _elem;; 
+		  		-> rrel_2: rrel_fixed: rrel_scp_var: _check;;
+				*);;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _descr;;
+
+		  	=> nrel_goto: .proc_checking_lists_html_operator7_wait;;
+			*);;
+
+		-> .proc_checking_lists_html_operator7_wait
+			(*
+			<- waitReturn;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
+
+			=> nrel_goto: .proc_checking_lists_html_operator3;;
+			*);;
+
+		-> .proc_checking_lists_html_operator_return
+			(*
+			<-return;;
+            *);;
+	*);;
+*);;

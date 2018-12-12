@@ -1,0 +1,52 @@
+agent_of_verifying_correctness_of_html_snippet_for_css
+=> nrel_main_idtf:
+	[ sc-агент проверки корректности html-фрагмента(с позиции CSS)] 
+		(* <- lang_ru;; *);
+
+	[sc-agent of verifying correctness of html snippet(CSS)] 
+		(* <- lang_en;; *);
+
+<- abstract_sc_agent;
+
+=> nrel_primary_initiation_condition: 
+	(sc_event_add_output_arc => question_initiated);
+
+=> nrel_initiation_condition_and_result: 
+	(..sc_agent_of_verifying_correctness_of_html_snippet_for_css_condition => ..sc_agent_of_verifying_correctness_of_html_snippet_for_css_result);
+
+<= nrel_sc_agent_key_sc_elements: 
+	{
+	question_initiated;
+	question;
+	action_of_verifying_correctness_of_html_snippet_for_css
+	};
+
+=> nrel_inclusion: 
+	.platform_independent_realization_of_sc_agent_of_verifying_correctness_of_html_snippet_for_css
+	(*
+	<- platform_independent_abstract_sc_agent;;
+	<= nrel_sc_agent_program: 
+		{
+		agent_of_verifying_correctness_of_html_snippet_for_css;
+		proc_checking_styles_for_css
+		};;
+	-> sc_agent_of_verifying_correctness_of_html_snippet_for_css_scp   
+		(* <- active_sc_agent;; *);;
+	*);;
+
+..sc_agent_of_verifying_correctness_of_html_snippet_for_css_condition
+= [*
+	action_of_verifying_correctness_of_html_snippet_for_css _-> .._question;;
+	question_initiated _-> .._question;;
+	question _-> .._question;;
+	.._question _-> .._param;;
+*];;
+
+..sc_agent_of_verifying_correctness_of_html_snippet_for_css_result
+= [*
+	action_of_verifying_correctness_of_html_snippet_for_css _-> .._question;;
+	question_finished _-> .._question;;
+	question _-> .._question;;
+	.._question _=> nrel_answer:: .._answer;;
+	.._question _-> .._param;;
+*];;

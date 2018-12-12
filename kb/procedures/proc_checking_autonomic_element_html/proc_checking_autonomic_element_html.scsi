@@ -1,0 +1,55 @@
+scp_program -> proc_checking_autonomic_element
+(*	
+	-> rrel_params: .proc_checking_autonomic_element_params
+		(* 
+		->rrel_1: rrel_in: _param;;
+		->rrel_2: rrel_in: _check;;
+		*);;
+
+	-> rrel_operators: .proc_checking_autonomic_element_operator_set
+		(*
+		-> rrel_init: .proc_checking_autonomic_element_operator1
+			(*
+			<- searchElStr3;;
+			
+            		-> rrel_1: rrel_fixed: rrel_scp_const: concept_autonomic_element;; 
+            		-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;; 
+            		-> rrel_3: rrel_fixed: rrel_scp_var: _param;; 
+                  
+ 			=> nrel_then: .proc_checking_autonomic_element_operator2;;
+  			=> nrel_else: .proc_checking_autonomic_element_operator_return;;
+            *);;
+
+		-> .proc_checking_autonomic_element_operator2
+			(*
+			<-searchSetStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _param;;
+            		-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc2;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _elem;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc3;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_tag_content;;
+
+			-> rrel_set_3: rrel_assign: rrel_scp_var: _set;;
+
+			=> nrel_then: .proc_checking_autonomic_element_operator_wrong;;
+  			=> nrel_else: .proc_checking_autonomic_element_operator_return;;
+			*);;
+
+		-> .proc_checking_autonomic_element_operator_wrong
+			(*
+			<- contMult;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _check;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _check;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: [0];;
+
+			=> nrel_goto: .proc_checking_autonomic_element_operator_return;;
+			*);;
+
+		-> .proc_checking_autonomic_element_operator_return
+			(*
+			<-return;;
+            *);;
+	*);;
+*);;

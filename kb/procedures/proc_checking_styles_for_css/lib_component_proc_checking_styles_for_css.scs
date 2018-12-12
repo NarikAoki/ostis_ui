@@ -1,0 +1,26 @@
+lib_component_proc_checking_styles_for_css
+=> nrel_main_idtf:
+	[Компонент библиотеки. Scp-программа проверки корректности использования автономных элементов]
+	(* <- lang_ru;; *);
+	[Library component. Scp-program of checking styles for css]
+	(* <- lang_en;; *);
+
+<- library_of_platform_independent_reusable_components;
+
+-> rrel_key_sc_element: 
+	proc_checking_styles_for_css;
+
+<- rrel_key_sc_element: 
+	...
+	(*
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://htmls/proc_checking_styles_for_css.html" 
+				(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+lib_component_proc_checking_styles_for_css = [*^"file://proc_checking_styles_for_css.scsi"*];;

@@ -1,0 +1,6 @@
+sc_text_of_agent_of_verifying_correctness_of_html_snippet_for_css
+-> rrel_key_sc_element:
+	agent_of_verifying_correctness_of_html_snippet_for_css;
+<- scp_program_sc_text;;
+
+sc_text_of_agent_of_verifying_correctness_of_html_snippet_for_css = [*^"file://agent_of_verifying_correctness_of_html_snippet_for_css.scsi"*];;
